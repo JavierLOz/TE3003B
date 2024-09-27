@@ -73,8 +73,8 @@ class Robot_Pose(Node):
         self.robot_x += (self.cmd_vel.linear.x * dt) * np.cos(self.robot_theta)
         self.robot_y += (self.cmd_vel.linear.x * dt) * np.sin(self.robot_theta)
 
-        wr = (self.cmd_vel.linear.x - self.cmd_vel.angular.z * self.L /2.0) / self.R
-        wl = (self.cmd_vel.linear.x + self.cmd_vel.angular.z * self.L /2.0) / self.R
+        wr = (self.cmd_vel.linear.x + self.cmd_vel.angular.z * self.L /2.0) / self.R
+        wl = (self.cmd_vel.linear.x - self.cmd_vel.angular.z * self.L /2.0) / self.R
         
         self.wr_theta += wr * dt
         self.wl_theta += wl * dt
