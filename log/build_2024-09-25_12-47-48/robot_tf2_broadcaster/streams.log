@@ -1,0 +1,40 @@
+[1.311s] Invoking command in '/home/javier/puzzlebot_ws/src/robot_tf2_broadcaster': PYTHONPATH=/home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/prefix_override:/home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/robot_tf2_broadcaster build --build-base /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build install --record /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/install.log --single-version-externally-managed
+[1.531s] running egg_info
+[1.531s] creating ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info
+[1.532s] writing ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/PKG-INFO
+[1.532s] writing dependency_links to ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/dependency_links.txt
+[1.532s] writing entry points to ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/entry_points.txt
+[1.532s] writing requirements to ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/requires.txt
+[1.533s] writing top-level names to ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/top_level.txt
+[1.533s] writing manifest file '../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/SOURCES.txt'
+[1.534s] reading manifest file '../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/SOURCES.txt'
+[1.534s] adding license file 'LICENSE'
+[1.535s] writing manifest file '../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/SOURCES.txt'
+[1.535s] running build
+[1.535s] running build_py
+[1.535s] creating /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build
+[1.535s] creating /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib
+[1.536s] creating /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster
+[1.536s] copying robot_tf2_broadcaster/__init__.py -> /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster
+[1.537s] copying robot_tf2_broadcaster/robot_tf2_broadcaster.py -> /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster
+[1.537s] running install
+[1.551s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.551s]   warnings.warn(
+[1.551s] running install_lib
+[1.552s] creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster
+[1.552s] copying /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster/__init__.py -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster
+[1.552s] copying /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster/robot_tf2_broadcaster.py -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster
+[1.552s] byte-compiling /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster/__init__.py to __init__.cpython-310.pyc
+[1.553s] byte-compiling /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster/robot_tf2_broadcaster.py to robot_tf2_broadcaster.cpython-310.pyc
+[1.553s] running install_data
+[1.553s] creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/ament_index
+[1.553s] creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/ament_index/resource_index
+[1.553s] creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/ament_index/resource_index/packages
+[1.554s] copying resource/robot_tf2_broadcaster -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/ament_index/resource_index/packages
+[1.554s] copying package.xml -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/robot_tf2_broadcaster
+[1.554s] running install_egg_info
+[1.555s] Copying ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info to /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster-0.0.0-py3.10.egg-info
+[1.556s] running install_scripts
+[1.573s] Installing robot_tf2_broadcaster script to /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/robot_tf2_broadcaster
+[1.573s] writing list of installed files to '/home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/install.log'
+[1.591s] Invoked command in '/home/javier/puzzlebot_ws/src/robot_tf2_broadcaster' returned '0': PYTHONPATH=/home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/prefix_override:/home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/robot_tf2_broadcaster build --build-base /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build install --record /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/install.log --single-version-externally-managed

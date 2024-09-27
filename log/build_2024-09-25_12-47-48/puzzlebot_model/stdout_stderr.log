@@ -1,0 +1,37 @@
+running egg_info
+creating ../build/puzzlebot_model/puzzlebot_model.egg-info
+writing ../build/puzzlebot_model/puzzlebot_model.egg-info/PKG-INFO
+writing dependency_links to ../build/puzzlebot_model/puzzlebot_model.egg-info/dependency_links.txt
+writing entry points to ../build/puzzlebot_model/puzzlebot_model.egg-info/entry_points.txt
+writing requirements to ../build/puzzlebot_model/puzzlebot_model.egg-info/requires.txt
+writing top-level names to ../build/puzzlebot_model/puzzlebot_model.egg-info/top_level.txt
+writing manifest file '../build/puzzlebot_model/puzzlebot_model.egg-info/SOURCES.txt'
+reading manifest file '../build/puzzlebot_model/puzzlebot_model.egg-info/SOURCES.txt'
+writing manifest file '../build/puzzlebot_model/puzzlebot_model.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/javier/puzzlebot_ws/src/build/puzzlebot_model/build
+creating /home/javier/puzzlebot_ws/src/build/puzzlebot_model/build/lib
+creating /home/javier/puzzlebot_ws/src/build/puzzlebot_model/build/lib/puzzlebot_model
+copying puzzlebot_model/__init__.py -> /home/javier/puzzlebot_ws/src/build/puzzlebot_model/build/lib/puzzlebot_model
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages/puzzlebot_model
+copying /home/javier/puzzlebot_ws/src/build/puzzlebot_model/build/lib/puzzlebot_model/__init__.py -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages/puzzlebot_model
+byte-compiling /home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages/puzzlebot_model/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/ament_index
+creating /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/ament_index/resource_index
+creating /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/ament_index/resource_index/packages
+copying resource/puzzlebot_model -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/ament_index/resource_index/packages
+copying package.xml -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model
+creating /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/meshes
+copying meshes/MCR2_1000_1_1_Wheel_Coupler_2.stl -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/meshes
+copying meshes/MCR2_1000_13_Chassis.stl -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/meshes
+copying meshes/MCR2_1000_0_Puzzlebot.stl -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/meshes
+running install_egg_info
+Copying ../build/puzzlebot_model/puzzlebot_model.egg-info to /home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages/puzzlebot_model-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/javier/puzzlebot_ws/src/build/puzzlebot_model/install.log'

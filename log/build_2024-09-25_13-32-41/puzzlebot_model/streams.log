@@ -1,0 +1,22 @@
+[1.173s] Invoking command in '/home/javier/puzzlebot_ws/src/puzzlebot_model': PYTHONPATH=/home/javier/puzzlebot_ws/src/build/puzzlebot_model/prefix_override:/home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/puzzlebot_model build --build-base /home/javier/puzzlebot_ws/src/build/puzzlebot_model/build install --record /home/javier/puzzlebot_ws/src/build/puzzlebot_model/install.log --single-version-externally-managed
+[1.411s] running egg_info
+[1.411s] writing ../build/puzzlebot_model/puzzlebot_model.egg-info/PKG-INFO
+[1.412s] writing dependency_links to ../build/puzzlebot_model/puzzlebot_model.egg-info/dependency_links.txt
+[1.412s] writing entry points to ../build/puzzlebot_model/puzzlebot_model.egg-info/entry_points.txt
+[1.412s] writing requirements to ../build/puzzlebot_model/puzzlebot_model.egg-info/requires.txt
+[1.412s] writing top-level names to ../build/puzzlebot_model/puzzlebot_model.egg-info/top_level.txt
+[1.414s] reading manifest file '../build/puzzlebot_model/puzzlebot_model.egg-info/SOURCES.txt'
+[1.415s] writing manifest file '../build/puzzlebot_model/puzzlebot_model.egg-info/SOURCES.txt'
+[1.415s] running build
+[1.415s] running build_py
+[1.415s] running install
+[1.415s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.415s]   warnings.warn(
+[1.416s] running install_lib
+[1.416s] running install_data
+[1.417s] running install_egg_info
+[1.419s] removing '/home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages/puzzlebot_model-0.0.0-py3.10.egg-info' (and everything under it)
+[1.419s] Copying ../build/puzzlebot_model/puzzlebot_model.egg-info to /home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages/puzzlebot_model-0.0.0-py3.10.egg-info
+[1.420s] running install_scripts
+[1.441s] writing list of installed files to '/home/javier/puzzlebot_ws/src/build/puzzlebot_model/install.log'
+[1.498s] Invoked command in '/home/javier/puzzlebot_ws/src/puzzlebot_model' returned '0': PYTHONPATH=/home/javier/puzzlebot_ws/src/build/puzzlebot_model/prefix_override:/home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/puzzlebot_model build --build-base /home/javier/puzzlebot_ws/src/build/puzzlebot_model/build install --record /home/javier/puzzlebot_ws/src/build/puzzlebot_model/install.log --single-version-externally-managed
