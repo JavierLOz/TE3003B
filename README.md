@@ -1,6 +1,6 @@
-Puzzlebot Related FIles
+# Puzzlebot Related FIles
 
-Challenge 1. 
+## Challenge 1. 
 - Run puzzlebot URDF using RVIZ whith animated wheels and moving model
 
   For runnig the simualtion on rviz2 with the puzzlebot model run the following line after compiling 
