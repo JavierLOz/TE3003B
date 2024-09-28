@@ -14,9 +14,11 @@
 
   The ```twist``` command can be published through a terminal using the command:
     Using autocomplete: 
-    ```console ros2 topic pub /cmd_vel geom<tab> "l <tab>```
+    ```console
+       $ ros2 topic pub /cmd_vel geom<tab> "l <tab>
+    ```
   ```console
-  ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "linear:
+  $ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "linear:
     x: 0.0
     y: 0.0
     z: 0.0
