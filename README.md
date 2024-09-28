@@ -13,6 +13,7 @@
   The script also runs the node ```robot_pose_estimator``` which recieves ```twist``` command on the topic ```/cmd_vel``` and moves the robot accordingly to the recieved speed command.
 
   The ```twist``` command can be published through a terminal using the command:
+  
     Using autocomplete: 
     ```console
        $ ros2 topic pub /cmd_vel geom<tab> "l <tab>
