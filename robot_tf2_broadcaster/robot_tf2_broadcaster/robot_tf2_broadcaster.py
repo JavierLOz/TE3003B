@@ -12,8 +12,30 @@ class StatePublisher(Node):
     def __init__(self):
         super().__init__('state_publisher')
 
+        self.declare_parameter("chasis_pose_pub_topic","chasis_pose")
+        self.declare_parameter("joint_states_pub_topic","joint_states")
+        self.declare_parameter("wr_pose_pub_topic","wr_pose")
+        self.declare_parameter("wl_pose_pub_topic","wl_pose")
+        self.declare_parameter("world_reference_frame","base_footprint")
+        self.declare_parameter("robot_chasis_frame","chasis")
+        self.declare_parameter("base_joint_name","base_joint")
+        self.declare_parameter("base_to_left_wheel_name","base_to_left_wheel")
+        self.declare_parameter("base_to_right_wheel_name","base_to_right_wheel")
+
+        joint_states_pub_topic = self.get_parameter("joint_states_pub_topic").get_parameter_value().string_value 
+        chasis_pose_pub_topic = self.get_parameter("chasis_pose_pub_topic").get_parameter_value().string_value 
+        wl_pose_pub_topic = self.get_parameter("wl_pose_pub_topic").get_parameter_value().string_value 
+        wr_pose_pub_topic = self.get_parameter("wr_pose_pub_topic").get_parameter_value().string_value 
+
+        self.world_reference_frame = self.get_parameter("world_reference_frame").get_parameter_value().string_value 
+        self.robot_chasis_frame = self.get_parameter("robot_chasis_frame").get_parameter_value().string_value 
+        self.base_joint_name = self.get_parameter("base_joint_name").get_parameter_value().string_value 
+        self.base_to_left_wheel_name = self.get_parameter("base_to_left_wheel_name").get_parameter_value().string_value 
+        self.base_to_right_wheel_name = self.get_parameter("base_to_right_wheel_name").get_parameter_value().string_value 
+        
+
         qos_profile = QoSProfile(depth=10)
-        self.joint_pub = self.create_publisher(JointState, 'joint_states', qos_profile)
+        self.joint_pub = self.create_publisher(JointState, joint_states_pub_topic, qos_profile)
         self.broadcaster = TransformBroadcaster(self, qos=qos_profile)
         self.nodeName = self.get_name()
 
@@ -22,20 +44,20 @@ class StatePublisher(Node):
 
         self.subscription = self.create_subscription(
             Pose,
-            'chasis_pose',
+            chasis_pose_pub_topic,
             self.handle_pose,
             1)
         self.subscription  # prevent unused variable warning
 
         self.wl_subscription = self.create_subscription(
             Float32,
-            'wl_pose',
+            wl_pose_pub_topic,
             self.read_wl,
             1)
 
         self.wr_subscription = self.create_subscription(
             Float32,
-            'wr_pose',
+            wr_pose_pub_topic,
             self.read_wr,
             1)
 
@@ -50,13 +72,13 @@ class StatePublisher(Node):
     def handle_pose(self,msg):
          # message declarations
         self.odom_trans = TransformStamped()
-        self.odom_trans.header.frame_id = 'base_footprint'
-        self.odom_trans.child_frame_id = 'chasis'
+        self.odom_trans.header.frame_id = self.world_reference_frame
+        self.odom_trans.child_frame_id = self.robot_chasis_frame
 
         self.joint_state = JointState()
         now = self.get_clock().now()
         self.joint_state.header.stamp = now.to_msg()
-        self.joint_state.name = ['base_joint','base_to_left_wheel','base_to_right_wheel']
+        self.joint_state.name = [self.base_joint_name,self.base_to_left_wheel_name ,self.base_to_right_wheel_name ]
         self.joint_state.position = [0.,-self.wl_theta,-self.wr_theta]
         self.joint_pub.publish(self.joint_state)
         # update transform
