@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(aruco_detection)
+project(image_stream)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -9,25 +9,25 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED) 
+find_package(sensor_msgs REQUIRED) 
 find_package(cv_bridge REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(OpenCV REQUIRED)
-
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-add_executable(aruco_detection src/aruco_detection.cpp)
-ament_target_dependencies(aruco_detection rclcpp std_msgs cv_bridge image_transport OpenCV)
+add_executable(image_stream src/image_stream.cpp)
+ament_target_dependencies(image_stream rclcpp std_msgs sensor_msgs cv_bridge image_transport OpenCV )
 
-target_include_directories(aruco_detection PUBLIC
+target_include_directories(image_stream PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
   ${OpenCV_INCLUDE_DIRS})
-target_compile_features(aruco_detection PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+target_compile_features(image_stream PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-install(TARGETS aruco_detection
+install(TARGETS image_stream
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
