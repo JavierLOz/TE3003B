@@ -1,0 +1,22 @@
+[0.043s] Invoking command in '/home/javier/puzzlebot_ws/src/build/aruco_detection': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/aruco_detection -- -j12 -l12
+[0.478s] [100%] Built target aruco_detection
+[0.702s] Invoked command in '/home/javier/puzzlebot_ws/src/build/aruco_detection' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/aruco_detection -- -j12 -l12
+[0.734s] Invoking command in '/home/javier/puzzlebot_ws/src/build/aruco_detection': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/aruco_detection
+[0.742s] -- Install configuration: ""
+[0.743s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/lib/aruco_detection/aruco_detection
+[0.743s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/ament_index/resource_index/package_run_dependencies/aruco_detection
+[0.744s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/ament_index/resource_index/parent_prefix_path/aruco_detection
+[0.744s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/environment/ament_prefix_path.sh
+[0.744s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/environment/ament_prefix_path.dsv
+[0.744s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/environment/path.sh
+[0.745s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/environment/path.dsv
+[0.745s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/local_setup.bash
+[0.745s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/local_setup.sh
+[0.746s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/local_setup.zsh
+[0.746s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/local_setup.dsv
+[0.747s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/package.dsv
+[0.747s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/ament_index/resource_index/packages/aruco_detection
+[0.747s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/cmake/aruco_detectionConfig.cmake
+[0.747s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/cmake/aruco_detectionConfig-version.cmake
+[0.747s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/package.xml
+[0.758s] Invoked command in '/home/javier/puzzlebot_ws/src/build/aruco_detection' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/aruco_detection

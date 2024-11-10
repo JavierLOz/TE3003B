@@ -1,0 +1,24 @@
+running egg_info
+writing ../build/robot_pose_estimator/robot_pose_estimator.egg-info/PKG-INFO
+writing dependency_links to ../build/robot_pose_estimator/robot_pose_estimator.egg-info/dependency_links.txt
+writing entry points to ../build/robot_pose_estimator/robot_pose_estimator.egg-info/entry_points.txt
+writing requirements to ../build/robot_pose_estimator/robot_pose_estimator.egg-info/requires.txt
+writing top-level names to ../build/robot_pose_estimator/robot_pose_estimator.egg-info/top_level.txt
+reading manifest file '../build/robot_pose_estimator/robot_pose_estimator.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/robot_pose_estimator/robot_pose_estimator.egg-info/SOURCES.txt'
+running build
+running build_py
+copying robot_pose_estimator/robot_pose_estimator.py -> /home/javier/puzzlebot_ws/src/build/robot_pose_estimator/build/lib/robot_pose_estimator
+copying robot_pose_estimator/__init__.py -> /home/javier/puzzlebot_ws/src/build/robot_pose_estimator/build/lib/robot_pose_estimator
+running install
+running install_lib
+running install_data
+copying resource/robot_pose_estimator -> /home/javier/puzzlebot_ws/src/install/robot_pose_estimator/share/ament_index/resource_index/packages
+copying package.xml -> /home/javier/puzzlebot_ws/src/install/robot_pose_estimator/share/robot_pose_estimator
+running install_egg_info
+removing '/home/javier/puzzlebot_ws/src/install/robot_pose_estimator/lib/python3.10/site-packages/robot_pose_estimator-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/robot_pose_estimator/robot_pose_estimator.egg-info to /home/javier/puzzlebot_ws/src/install/robot_pose_estimator/lib/python3.10/site-packages/robot_pose_estimator-0.0.0-py3.10.egg-info
+running install_scripts
+Installing robot_pose_estimator script to /home/javier/puzzlebot_ws/src/install/robot_pose_estimator/lib/robot_pose_estimator
+writing list of installed files to '/home/javier/puzzlebot_ws/src/build/robot_pose_estimator/install.log'

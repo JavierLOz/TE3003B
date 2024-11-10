@@ -1,0 +1,22 @@
+[0.039s] Invoking command in '/home/javier/puzzlebot_ws/src/build/image_stream': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/image_stream -- -j12 -l12
+[0.482s] [100%] Built target image_stream
+[0.685s] Invoked command in '/home/javier/puzzlebot_ws/src/build/image_stream' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/image_stream -- -j12 -l12
+[0.717s] Invoking command in '/home/javier/puzzlebot_ws/src/build/image_stream': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/image_stream
+[0.725s] -- Install configuration: ""
+[0.725s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/lib/image_stream/image_stream
+[0.725s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/ament_index/resource_index/package_run_dependencies/image_stream
+[0.725s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/ament_index/resource_index/parent_prefix_path/image_stream
+[0.725s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/environment/ament_prefix_path.sh
+[0.726s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/environment/ament_prefix_path.dsv
+[0.726s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/environment/path.sh
+[0.726s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/environment/path.dsv
+[0.726s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/local_setup.bash
+[0.726s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/local_setup.sh
+[0.726s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/local_setup.zsh
+[0.726s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/local_setup.dsv
+[0.726s] -- Installing: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/package.dsv
+[0.726s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/ament_index/resource_index/packages/image_stream
+[0.727s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/cmake/image_streamConfig.cmake
+[0.727s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/cmake/image_streamConfig-version.cmake
+[0.727s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/image_stream/share/image_stream/package.xml
+[0.729s] Invoked command in '/home/javier/puzzlebot_ws/src/build/image_stream' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/image_stream

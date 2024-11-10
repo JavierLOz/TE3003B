@@ -1,0 +1,22 @@
+[0.324s] Invoking command in '/home/javier/puzzlebot_ws/src/build/puzzlebot_odometry': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/puzzlebot_odometry -- -j12 -l12
+[0.575s] [100%] Built target puzzlebot_odometry
+[0.785s] Invoked command in '/home/javier/puzzlebot_ws/src/build/puzzlebot_odometry' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/puzzlebot_odometry -- -j12 -l12
+[0.820s] Invoking command in '/home/javier/puzzlebot_ws/src/build/puzzlebot_odometry': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/puzzlebot_odometry
+[0.830s] -- Install configuration: ""
+[0.830s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/lib/puzzlebot_odometry/puzzlebot_odometry
+[0.831s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/ament_index/resource_index/package_run_dependencies/puzzlebot_odometry
+[0.831s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/ament_index/resource_index/parent_prefix_path/puzzlebot_odometry
+[0.831s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/environment/ament_prefix_path.sh
+[0.832s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/environment/ament_prefix_path.dsv
+[0.832s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/environment/path.sh
+[0.832s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/environment/path.dsv
+[0.832s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/local_setup.bash
+[0.832s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/local_setup.sh
+[0.833s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/local_setup.zsh
+[0.833s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/local_setup.dsv
+[0.833s] -- Installing: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/package.dsv
+[0.834s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/ament_index/resource_index/packages/puzzlebot_odometry
+[0.834s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/cmake/puzzlebot_odometryConfig.cmake
+[0.834s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/cmake/puzzlebot_odometryConfig-version.cmake
+[0.834s] -- Up-to-date: /home/javier/puzzlebot_ws/src/install/puzzlebot_odometry/share/puzzlebot_odometry/package.xml
+[0.848s] Invoked command in '/home/javier/puzzlebot_ws/src/build/puzzlebot_odometry' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/puzzlebot_odometry

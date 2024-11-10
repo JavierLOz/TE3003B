@@ -1,0 +1,82 @@
+[0.047s] Invoking command in '/home/javier/puzzlebot_ws/src/build/aruco_detection': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake /home/javier/puzzlebot_ws/src/aruco_detection -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/aruco_detection
+[2.806s] -- The C compiler identification is GNU 12.3.0
+[3.101s] -- The CXX compiler identification is GNU 11.4.0
+[3.163s] -- Detecting C compiler ABI info
+[3.266s] -- Detecting C compiler ABI info - done
+[3.272s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.273s] -- Detecting C compile features
+[3.282s] -- Detecting C compile features - done
+[3.285s] -- Detecting CXX compiler ABI info
+[3.378s] -- Detecting CXX compiler ABI info - done
+[3.385s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.385s] -- Detecting CXX compile features
+[3.385s] -- Detecting CXX compile features - done
+[3.398s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.865s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.107s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[4.342s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.399s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.470s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.531s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.581s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.940s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.960s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.295s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.345s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.383s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.448s] -- Looking for pthread.h
+[5.556s] -- Looking for pthread.h - found
+[5.557s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.624s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.624s] -- Found Threads: TRUE  
+[5.977s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[6.146s] -- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)
+[6.341s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[6.347s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.446s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.446s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/javier/puzzlebot_ws/src/aruco_detection/include>
+[6.446s] -- Configured cppcheck exclude dirs and/or files: 
+[6.447s] -- Added test 'lint_cmake' to check CMake code style
+[6.448s] -- Added test 'uncrustify' to check C / C++ code style
+[6.448s] -- Configured uncrustify additional arguments: 
+[6.448s] -- Added test 'xmllint' to check XML markup files
+[6.450s] -- Configuring done
+[6.462s] -- Generating done
+[6.463s] -- Build files have been written to: /home/javier/puzzlebot_ws/src/build/aruco_detection
+[6.475s] Invoked command in '/home/javier/puzzlebot_ws/src/build/aruco_detection' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake /home/javier/puzzlebot_ws/src/aruco_detection -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/aruco_detection
+[6.476s] Invoking command in '/home/javier/puzzlebot_ws/src/build/aruco_detection': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/aruco_detection -- -j12 -l12
+[6.514s] [ 50%] [32mBuilding CXX object CMakeFiles/aruco_detection.dir/src/aruco_detection.cpp.o[0m
+[9.216s] In file included from [01m[K/home/javier/puzzlebot_ws/src/aruco_detection/src/aruco_detection.cpp:5[m[K:
+[9.216s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.h:32:89:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Warning: This header is deprecated. Use 'image_transport.hpp' instead[m[K’
+[9.216s]    32 | #pragma message ("Warning: This header is deprecated. Use 'image_transport.hpp' instead"[01;36m[K)[m[K
+[9.216s]       |                                                                                         [01;36m[K^[m[K
+[9.521s] [01m[K/home/javier/puzzlebot_ws/src/aruco_detection/src/aruco_detection.cpp:[m[K In member function ‘[01m[Kvoid Aruco_Detection::imageCallback(const ConstSharedPtr&)[m[K’:
+[9.522s] [01m[K/home/javier/puzzlebot_ws/src/aruco_detection/src/aruco_detection.cpp:69:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.522s]    69 |     for (int i=0; [01;35m[Ki < markerIds.size()[m[K;i++){
+[9.522s]       |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[10.279s] [100%] [32m[1mLinking CXX executable aruco_detection[0m
+[12.053s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.410
+[12.065s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[12.094s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[13.572s] [100%] Built target aruco_detection
+[13.583s] Invoked command in '/home/javier/puzzlebot_ws/src/build/aruco_detection' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/aruco_detection -- -j12 -l12
+[13.613s] Invoking command in '/home/javier/puzzlebot_ws/src/build/aruco_detection': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/aruco_detection
+[13.619s] -- Install configuration: ""
+[13.619s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/lib/aruco_detection/aruco_detection
+[13.621s] -- Set runtime path of "/home/javier/puzzlebot_ws/src/install/aruco_detection/lib/aruco_detection/aruco_detection" to ""
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/ament_index/resource_index/package_run_dependencies/aruco_detection
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/ament_index/resource_index/parent_prefix_path/aruco_detection
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/environment/ament_prefix_path.sh
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/environment/ament_prefix_path.dsv
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/environment/path.sh
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/environment/path.dsv
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/local_setup.bash
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/local_setup.sh
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/local_setup.zsh
+[13.622s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/local_setup.dsv
+[13.623s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/package.dsv
+[13.623s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/ament_index/resource_index/packages/aruco_detection
+[13.623s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/cmake/aruco_detectionConfig.cmake
+[13.623s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/cmake/aruco_detectionConfig-version.cmake
+[13.623s] -- Installing: /home/javier/puzzlebot_ws/src/install/aruco_detection/share/aruco_detection/package.xml
+[13.625s] Invoked command in '/home/javier/puzzlebot_ws/src/build/aruco_detection' returned '0': CMAKE_PREFIX_PATH=/home/javier/puzzlebot_ws/install/puzzlebot_odometry:/home/javier/puzzlebot_ws/install/wago_plc:/home/javier/puzzlebot_ws/install/robot_tf2_broadcaster:/home/javier/puzzlebot_ws/install/robot_pose_estimator:/opt/ros/humble:/home/javier/puzzlebot_ws/install/puzzlebot_model:/home/javier/puzzlebot_ws/install/image_stream:/home/javier/puzzlebot_ws/install/aruco_detection /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/aruco_detection

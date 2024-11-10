@@ -5,14 +5,15 @@
     <arg name="sample_time" default="0.1"/>
     <arg name="L" default="0.19"/>
     <arg name="R" default="0.05"/>
-    <arg name="cmd_vel_topic" default="/cmd_vel"/>
+    <arg name="cmd_vel_topic" default="/cmd_vel_debug"/>
     <arg name="chasis_pose_pub_topic" default="/chasis_pose"/>
     <arg name="wr_pose_pub_topic" default="/wr_pose"/>
     <arg name="wl_pose_pub_topic" default="/wl_pose"/>
     <!-- <arg name="robot_description" default="puzzlebot.urdf"/> -->
 
-    <arg name="world_reference_frame" default="base_footprint"/>
-    <arg name="robot_chasis_frame" default="chasis"/>
+    <arg name="world_reference_frame" default="odom"/>
+    <arg name="robot_chasis_frame" default="chasis"/> 
+    <!-- TESTTT -->
     <arg name="base_joint_name" default="base_joint"/>
     <arg name="base_to_left_wheel_name" default="base_to_left_wheel"/>
     <arg name="base_to_right_wheel_name" default="base_to_right_wheel"/>

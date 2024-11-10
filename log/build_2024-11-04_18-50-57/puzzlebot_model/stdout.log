@@ -1,0 +1,28 @@
+running egg_info
+writing ../build/puzzlebot_model/puzzlebot_model.egg-info/PKG-INFO
+writing dependency_links to ../build/puzzlebot_model/puzzlebot_model.egg-info/dependency_links.txt
+deleting ../build/puzzlebot_model/puzzlebot_model.egg-info/entry_points.txt
+writing requirements to ../build/puzzlebot_model/puzzlebot_model.egg-info/requires.txt
+writing top-level names to ../build/puzzlebot_model/puzzlebot_model.egg-info/top_level.txt
+reading manifest file '../build/puzzlebot_model/puzzlebot_model.egg-info/SOURCES.txt'
+writing manifest file '../build/puzzlebot_model/puzzlebot_model.egg-info/SOURCES.txt'
+running build
+running build_py
+copying puzzlebot_model/__init__.py -> /home/javier/puzzlebot_ws/src/build/puzzlebot_model/build/lib/puzzlebot_model
+running install
+running install_lib
+running install_data
+copying resource/puzzlebot_model -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/ament_index/resource_index/packages
+copying package.xml -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model
+copying meshes/RP-lidar-A1.stl -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/meshes
+creating /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/urdf
+copying urdf/puzzlebot.urdf -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/urdf
+creating /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/config
+copying config/rviz2_puzzlebot_model.rviz -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/config
+creating /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/launch
+copying launch/puzzlebot_model.launch.py -> /home/javier/puzzlebot_ws/src/install/puzzlebot_model/share/puzzlebot_model/launch
+running install_egg_info
+removing '/home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages/puzzlebot_model-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/puzzlebot_model/puzzlebot_model.egg-info to /home/javier/puzzlebot_ws/src/install/puzzlebot_model/lib/python3.10/site-packages/puzzlebot_model-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/javier/puzzlebot_ws/src/build/puzzlebot_model/install.log'

@@ -1,3 +1,0 @@
-[console_scripts]
-robot_tf2_broadcaster = robot_tf2_broadcaster.robot_tf2_broadcaster:main
-

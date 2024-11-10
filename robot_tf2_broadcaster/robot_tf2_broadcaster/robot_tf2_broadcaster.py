@@ -16,11 +16,12 @@ class StatePublisher(Node):
         self.declare_parameter("joint_states_pub_topic","joint_states")
         self.declare_parameter("wr_pose_pub_topic","wr_pose")
         self.declare_parameter("wl_pose_pub_topic","wl_pose")
-        self.declare_parameter("world_reference_frame","base_footprint")
+        self.declare_parameter("world_reference_frame","world")
         self.declare_parameter("robot_chasis_frame","chasis")
         self.declare_parameter("base_joint_name","base_joint")
         self.declare_parameter("base_to_left_wheel_name","base_to_left_wheel")
         self.declare_parameter("base_to_right_wheel_name","base_to_right_wheel")
+        self.declare_parameter("base_to_lidar_name","base_to_lidar")
 
         joint_states_pub_topic = self.get_parameter("joint_states_pub_topic").get_parameter_value().string_value 
         chasis_pose_pub_topic = self.get_parameter("chasis_pose_pub_topic").get_parameter_value().string_value 
@@ -32,6 +33,7 @@ class StatePublisher(Node):
         self.base_joint_name = self.get_parameter("base_joint_name").get_parameter_value().string_value 
         self.base_to_left_wheel_name = self.get_parameter("base_to_left_wheel_name").get_parameter_value().string_value 
         self.base_to_right_wheel_name = self.get_parameter("base_to_right_wheel_name").get_parameter_value().string_value 
+        self.base_to_lidar_name = self.get_parameter("base_to_lidar_name").get_parameter_value().string_value 
         
 
         qos_profile = QoSProfile(depth=10)
@@ -72,26 +74,38 @@ class StatePublisher(Node):
     def handle_pose(self,msg):
          # message declarations
         self.odom_trans = TransformStamped()
-        self.odom_trans.header.frame_id = self.world_reference_frame
-        self.odom_trans.child_frame_id = self.robot_chasis_frame
+        self.odom_trans.header.frame_id = self.world_reference_frame #odom 
+        self.odom_trans.child_frame_id = self.robot_chasis_frame # chasis 
+
+        self.lidar_trans = TransformStamped()
+        self.lidar_trans.header.frame_id = "chasis"
+        self.lidar_trans.child_frame_id = "lidar"
 
         self.joint_state = JointState()
         now = self.get_clock().now()
         self.joint_state.header.stamp = now.to_msg()
-        self.joint_state.name = [self.base_joint_name,self.base_to_left_wheel_name ,self.base_to_right_wheel_name ]
+        self.joint_state.name = [self.base_to_lidar_name, self.base_to_left_wheel_name ,self.base_to_right_wheel_name]
         self.joint_state.position = [0.,-self.wl_theta,-self.wr_theta]
         self.joint_pub.publish(self.joint_state)
         # update transform
         # (moving in a circle with radius=2)
         self.odom_trans.header.stamp = now.to_msg()
-        self.odom_trans.transform.translation.x = 0. - msg.position.y
-        self.odom_trans.transform.translation.y = 0.+ msg.position.x
+        self.odom_trans.transform.translation.x = 0. #- msg.position.y
+        self.odom_trans.transform.translation.y = 0.#+ msg.position.x
         self.odom_trans.transform.translation.z = 0.
         self.odom_trans.transform.rotation = \
-        euler_to_quaternion(0., 0., 1.57 + msg.orientation.z) # roll,pitch,yaw
+        euler_to_quaternion(0., 0., 0. )#+ msg.orientation.z) # roll,pitch,yaw
+
+        self.lidar_trans.header.stamp = now.to_msg()
+        self.lidar_trans.transform.translation.x = 0. 
+        self.lidar_trans.transform.translation.y = 0. 
+        self.lidar_trans.transform.translation.z = 0.08
+        self.lidar_trans.transform.rotation = \
+        euler_to_quaternion(0., 0., 0.) # roll,pitch,yaw
 
         # send the joint state and transform
         self.broadcaster.sendTransform(self.odom_trans)  
+        self.broadcaster.sendTransform(self.lidar_trans)  
         # self.broadcaster.sendTransform(self.wheel_rotate)  
 
 def euler_to_quaternion(roll, pitch, yaw):
