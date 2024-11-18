@@ -1,0 +1,188 @@
+[0.016s] Invoking command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target EKFLozalization[0m
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o[0m
+[2.726s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:348:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KPuzzlebot_Odometry[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.726s]   348 |     [01;31m[KPuzzlebot_Odometry[m[K()
+[2.726s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.015s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::control_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.015s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:124:30:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> >::_linear_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’}
+[3.015s]   124 |       this->v_k = msg->linear[01;31m[K->[m[Kx;
+[3.016s]       |                              [01;31m[K^~[m[K
+[3.016s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:125:31:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> >::_angular_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’}
+[3.016s]   125 |       this->w_k = msg->angular[01;31m[K->[m[Kz;
+[3.016s]       |                               [01;31m[K^~[m[K
+[3.016s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kfloat EKFLocalization::wrap_to_pi(float&)[m[K’:
+[3.016s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:133:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::numbers[m[K’ has not been declared
+[3.016s]   133 |       if (theta > std::[01;31m[Knumbers[m[K::pi){
+[3.016s]       |                        [01;31m[K^~~~~~~[m[K
+[3.016s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:134:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::numbers[m[K’ has not been declared
+[3.016s]   134 |         theta = theta - 2 * std::[01;31m[Knumbers[m[K::pi;
+[3.016s]       |                                  [01;31m[K^~~~~~~[m[K
+[3.016s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:136:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::numbers[m[K’ has not been declared
+[3.017s]   136 |       else if (theta < std::[01;31m[Knumbers[m[K::pi){
+[3.017s]       |                             [01;31m[K^~~~~~~[m[K
+[3.017s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:137:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::numbers[m[K’ has not been declared
+[3.017s]   137 |         theta = theta + 2 * std::[01;31m[Knumbers[m[K::pi;
+[3.017s]       |                                  [01;31m[K^~~~~~~[m[K
+[3.039s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::calc_SigmaD()[m[K’:
+[3.039s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:164:7:[m[K [01;31m[Kerror: [m[K‘[01m[KsigmaD[m[K’ was not declared in this scope; did you mean ‘[01m[KSigmaD[m[K’?
+[3.039s]   164 |       [01;31m[KsigmaD[m[K(0,0) = kr * std::abs(wR);
+[3.040s]       |       [01;31m[K^~~~~~[m[K
+[3.040s]       |       [32m[KSigmaD[m[K
+[3.044s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:164:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kkr[m[K’ was not declared in this scope; did you mean ‘[01m[KkR[m[K’?
+[3.044s]   164 |       sigmaD(0,0) = [01;31m[Kkr[m[K * std::abs(wR);
+[3.044s]       |                     [01;31m[K^~[m[K
+[3.044s]       |                     [32m[KkR[m[K
+[3.048s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:165:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kkl[m[K’ was not declared in this scope; did you mean ‘[01m[KkL[m[K’?
+[3.048s]   165 |       sigmaD(1,1) = [01;31m[Kkl[m[K * std::abs(wL);
+[3.048s]       |                     [01;31m[K^~[m[K
+[3.048s]       |                     [32m[KkL[m[K
+[3.128s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::calc_zHat()[m[K’:
+[3.128s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:195:30:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+[3.128s]   195 |       z(1) = wrap_to_pi([01;31m[Katan2(delta_zy,delta_zx)[m[K);
+[3.128s]       |                         [01;31m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[3.128s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:132:29:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kfloat EKFLocalization::wrap_to_pi(float&)[m[K’
+[3.128s]   132 |     float wrap_to_pi([01;36m[Kfloat& theta[m[K){
+[3.128s]       |                      [01;36m[K~~~~~~~^~~~~[m[K
+[3.141s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::calc_Z()[m[K’:
+[3.141s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:208:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kg[m[K’ was not declared in this scope
+[3.141s]   208 |       Z = G * Sigma * [01;31m[Kg[m[K.transpose() + R;
+[3.141s]       |                       [01;31m[K^[m[K
+[3.209s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::calc_Sigma()[m[K’:
+[3.209s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:221:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kk[m[K’ was not declared in this scope
+[3.209s]   221 |       Sigma = (I_3x3 - [01;31m[Kk[m[K * G) * Sigma;
+[3.209s]       |                        [01;31m[K^[m[K
+[3.210s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::publish_result()[m[K’:
+[3.210s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:262:48:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[3.210s]   262 |       odometry_msg.pose.covariance[0]  = Sigma[[01;35m[K0[m[K, 0]
+[3.210s]       |                                                [01;35m[K^[m[K
+[3.210s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:263:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kodometry_msg[m[K’
+[3.210s]   263 |       [01;31m[Kodometry_msg[m[K.pose.covariance[1]  = Sigma[0, 1]
+[3.211s]       |       [01;31m[K^~~~~~~~~~~~[m[K
+[3.211s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::Set_Previous()[m[K’:
+[3.211s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:280:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kprev_Sigma[m[K’
+[3.211s]   280 |       [01;31m[Kprev_Sigma[m[K = Sigma
+[3.211s]       |       [01;31m[K^~~~~~~~~~[m[K
+[3.211s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::PoseEstimation(float, bool)[m[K’:
+[3.211s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:288:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kz_measured[m[K’
+[3.211s]   288 |         [01;31m[Kz_measured[m[K(1) = 0.0; //landmark_measured(1);
+[3.211s]       |         [01;31m[K^~~~~~~~~~[m[K
+[3.215s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:302:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kkl[m[K’ was not declared in this scope; did you mean ‘[01m[KkL[m[K’?
+[3.216s]   302 |         [01;31m[Kkl[m[K = 0.0; //calibrated_klr(0);
+[3.216s]       |         [01;31m[K^~[m[K
+[3.216s]       |         [32m[KkL[m[K
+[3.220s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:303:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kkr[m[K’ was not declared in this scope; did you mean ‘[01m[KkR[m[K’?
+[3.220s]   303 |         [01;31m[Kkr[m[K = 0.0; //calibrated_klr(1);
+[3.220s]       |         [01;31m[K^~[m[K
+[3.220s]       |         [32m[KkR[m[K
+[3.225s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:311:9:[m[K [01;31m[Kerror: [m[K‘[01m[KEstimate_Q[m[K’ was not declared in this scope; did you mean ‘[01m[Kestimate_Q[m[K’?
+[3.225s]   311 |         [01;31m[KEstimate_Q[m[K()
+[3.225s]       |         [01;31m[K^~~~~~~~~~[m[K
+[3.225s]       |         [32m[Kestimate_Q[m[K
+[3.229s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:317:9:[m[K [01;31m[Kerror: [m[K‘[01m[KCalc_Gradient_h[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalc_gradient_h[m[K’?
+[3.230s]   317 |         [01;31m[KCalc_Gradient_h[m[K(); // Pose Model linerization
+[3.230s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.230s]       |         [32m[Kcalc_gradient_h[m[K
+[3.235s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:318:9:[m[K [01;31m[Kerror: [m[K‘[01m[KCalc_SigmaHat[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalc_SigmaHat[m[K’?
+[3.235s]   318 |         [01;31m[KCalc_SigmaHat[m[K(); // Uncertainty of Ideal calculated pose
+[3.235s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[3.235s]       |         [32m[Kcalc_SigmaHat[m[K
+[3.240s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:320:11:[m[K [01;31m[Kerror: [m[K‘[01m[KCalc_zHat[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalc_zHat[m[K’?
+[3.240s]   320 |           [01;31m[KCalc_zHat[m[K(); // Ideal observed pose
+[3.241s]       |           [01;31m[K^~~~~~~~~[m[K
+[3.241s]       |           [32m[Kcalc_zHat[m[K
+[3.246s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:321:11:[m[K [01;31m[Kerror: [m[K‘[01m[KCalc_Gradient_g[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalc_gradient_g[m[K’?
+[3.246s]   321 |           [01;31m[KCalc_Gradient_g[m[K() ;// Observation Model linerization
+[3.246s]       |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.246s]       |           [32m[Kcalc_gradient_g[m[K
+[3.250s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:322:11:[m[K [01;31m[Kerror: [m[K‘[01m[KCalc_Z[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalc_Z[m[K’?
+[3.250s]   322 |           [01;31m[KCalc_Z[m[K() ;// Uncertainty of Ideal observed pose
+[3.250s]       |           [01;31m[K^~~~~~[m[K
+[3.250s]       |           [32m[Kcalc_Z[m[K
+[3.256s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:323:11:[m[K [01;31m[Kerror: [m[K‘[01m[KCalc_KalmanGain[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalc_kalman_gain[m[K’?
+[3.256s]   323 |           [01;31m[KCalc_KalmanGain[m[K(); // Kalman Filter Gain!
+[3.256s]       |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.256s]       |           [32m[Kcalc_kalman_gain[m[K
+[3.262s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:324:11:[m[K [01;31m[Kerror: [m[K‘[01m[KCalc_miu[m[K’ was not declared in this scope; did you mean ‘[01m[Kcacl_miu[m[K’?
+[3.262s]   324 |           [01;31m[KCalc_miu[m[K(); // Estimated pose
+[3.262s]       |           [01;31m[K^~~~~~~~[m[K
+[3.262s]       |           [32m[Kcacl_miu[m[K
+[3.266s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:325:11:[m[K [01;31m[Kerror: [m[K‘[01m[KCalc_Sigma[m[K’ was not declared in this scope; did you mean ‘[01m[Kcalc_Sigma[m[K’?
+[3.266s]   325 |           [01;31m[KCalc_Sigma[m[K() ;// Estimated uncertainty of pose
+[3.266s]       |           [01;31m[K^~~~~~~~~~[m[K
+[3.267s]       |           [32m[Kcalc_Sigma[m[K
+[3.271s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::timer_callback()[m[K’:
+[3.272s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:339:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdt_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdt[m[K’?
+[3.272s]   339 |         [01;31m[Kdt_[m[K = current_time.seconds() - last_time.seconds();
+[3.272s]       |         [01;31m[K^~~[m[K
+[3.272s]       |         [32m[Kdt[m[K
+[3.272s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kint EKFLocalization::Puzzlebot_Odometry()[m[K’:
+[3.272s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:349:7:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+[3.272s]   349 |     : [01;31m[KNode[m[K("EKFLozalization")
+[3.272s]       |       [01;31m[K^~~~[m[K
+[3.272s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:356:49:[m[K [01;31m[Kerror: [m[K‘[01m[KPuzzlebot_Odometry[m[K’ is not a class, namespace, or enumeration
+[3.272s]   356 |       "/VelocityEncR", qos_settings, std::bind(&[01;31m[KPuzzlebot_Odometry[m[K::encR_callback, this, std::placeholders::_1));
+[3.272s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.272s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:359:49:[m[K [01;31m[Kerror: [m[K‘[01m[KPuzzlebot_Odometry[m[K’ is not a class, namespace, or enumeration
+[3.272s]   359 |       "/VelocityEncL", qos_settings, std::bind(&[01;31m[KPuzzlebot_Odometry[m[K::encL_callback, this, std::placeholders::_1));
+[3.272s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.272s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:362:44:[m[K [01;31m[Kerror: [m[K‘[01m[KPuzzlebot_Odometry[m[K’ is not a class, namespace, or enumeration
+[3.272s]   362 |       "/cmd_vel", qos_settings, std::bind(&[01;31m[KPuzzlebot_Odometry[m[K::compute_angular_vel, this, std::placeholders::_1));
+[3.273s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.274s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:369:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPuzzlebot_Odometry[m[K’ is not a class, namespace, or enumeration
+[3.274s]   369 |       100ms, std::bind(&[01;31m[KPuzzlebot_Odometry[m[K::timer_callback, this));
+[3.274s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.274s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:370:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[3.274s]   370 |     [01;35m[K}[m[K
+[3.274s]       |     [01;35m[K^[m[K
+[3.368s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+[3.368s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[3.368s]                  from [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:12[m[K:
+[3.368s] /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of ‘[01m[KEigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::operator[](Eigen::Index) [with Derived = Eigen::Matrix<float, 3, 3>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = float; Eigen::Index = long int][m[K’:
+[3.368s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:262:52:[m[K   required from here
+[3.368s] [01m[K/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:408:7:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: THE_BRACKET_OPERATOR_IS_ONLY_FOR_VECTORS__USE_THE_PARENTHESIS_OPERATOR_INSTEAD
+[3.368s]   408 |       [01;31m[KEIGEN_STATIC_ASSERT[m[K(Derived::IsVectorAtCompileTime,
+[3.368s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.368s] [01m[K/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:408:7:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix<float, 3, 3>::IsVectorAtCompileTime[m[K’ evaluates to false
+[3.845s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[3.846s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[3.846s]                  from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+[3.846s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[3.846s]                  from [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:9[m[K:
+[3.846s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = EKFLocalization; _Args = {}; _Tp = EKFLocalization][m[K’:
+[3.846s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = EKFLocalization; _Args = {}; _Tp = EKFLocalization; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<EKFLocalization>][m[K’
+[3.846s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = EKFLocalization; _Alloc = std::allocator<EKFLocalization>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.846s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = EKFLocalization; _Alloc = std::allocator<EKFLocalization>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.846s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<EKFLocalization>; _Args = {}; _Tp = EKFLocalization; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.846s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<EKFLocalization>; _Args = {}; _Tp = EKFLocalization][m[K’
+[3.846s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = EKFLocalization; _Alloc = std::allocator<EKFLocalization>; _Args = {}][m[K’
+[3.846s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = EKFLocalization; _Args = {}][m[K’
+[3.846s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:376:49:[m[K   required from here
+[3.846s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KEKFLocalization::EKFLocalization()[m[K’
+[3.846s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[3.846s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.847s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:27:7:[m[K [01;36m[Knote: [m[K‘[01m[KEKFLocalization::EKFLocalization()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[3.847s]    27 | class [01;36m[KEKFLocalization[m[K : public rclcpp::Node
+[3.847s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.847s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:27:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[3.847s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.847s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[3.847s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.847s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:41[m[K,
+[3.847s]                  from [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:14[m[K:
+[3.847s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[3.847s]  1294 |   [01;36m[KNode[m[K(
+[3.847s]       |   [01;36m[K^~~~[m[K
+[3.847s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[3.847s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[3.847s]   101 |   explicit [01;36m[KNode[m[K(
+[3.847s]       |            [01;36m[K^~~~[m[K
+[3.847s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[3.847s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[3.847s]    89 |   explicit [01;36m[KNode[m[K(
+[3.848s]       |            [01;36m[K^~~~[m[K
+[3.848s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[4.799s] gmake[2]: *** [CMakeFiles/EKFLozalization.dir/build.make:76: CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o] Error 1
+[4.799s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/EKFLozalization.dir/all] Error 2
+[4.800s] gmake: *** [Makefile:146: all] Error 2
+[4.802s] Invoked command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12

@@ -1,0 +1,10 @@
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/uninstall.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/image_stream_uninstall.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/image_stream.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/test.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/edit_cache.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/rebuild_cache.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/list_install_components.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/install.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/install/local.dir
+/home/javier/puzzlebot_ws/src/build/image_stream/CMakeFiles/install/strip.dir

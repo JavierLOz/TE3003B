@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.000557] (-) JobUnselected: {'identifier': 'aruco_detection'}
+[0.000630] (-) JobUnselected: {'identifier': 'image_stream'}
+[0.000661] (-) JobUnselected: {'identifier': 'puzzlebot_model'}
+[0.000689] (-) JobUnselected: {'identifier': 'puzzlebot_odometry'}
+[0.000715] (-) JobUnselected: {'identifier': 'robot_pose_estimator'}
+[0.000729] (-) JobUnselected: {'identifier': 'robot_tf2_broadcaster'}
+[0.000743] (-) JobUnselected: {'identifier': 'ugv02_cartographer'}
+[0.000759] (EKFLocalization) JobQueued: {'identifier': 'EKFLocalization', 'dependencies': OrderedDict()}
+[0.000917] (EKFLocalization) JobStarted: {'identifier': 'EKFLocalization'}
+[0.013272] (EKFLocalization) JobProgress: {'identifier': 'EKFLocalization', 'progress': 'cmake'}
+[0.014393] (EKFLocalization) JobProgress: {'identifier': 'EKFLocalization', 'progress': 'build'}
+[0.015482] (EKFLocalization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/javier/puzzlebot_ws/src/build/EKFLocalization', '--', '-j12', '-l12'], 'cwd': '/home/javier/puzzlebot_ws/src/build/EKFLocalization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'javier'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/javier'), ('OLDPWD', '/home/javier/puzzlebot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('SYSTEMD_EXEC_PID', '2319'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5509'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'javier'), ('JOURNAL_STREAM', '8:9949'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'javier'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/javier/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/javier-ROG-Strix-G531GV-G531GV:@/tmp/.ICE-unix/2130,unix/javier-ROG-Strix-G531GV-G531GV:/tmp/.ICE-unix/2130'), ('INVOCATION_ID', '7220dc1058144348963468d69081ce48'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9VEBX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:83ee4ec3-a46c-4cbe-8d78-e45778467f4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/javier/puzzlebot_ws/src/build/EKFLocalization'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.052969] (EKFLocalization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target EKFLozalization\x1b[0m\n'}
+[0.070455] (EKFLocalization) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o\x1b[0m\n'}
+[0.099829] (-) TimerEvent: {}
+[0.200116] (-) TimerEvent: {}
+[0.300333] (-) TimerEvent: {}
+[0.400578] (-) TimerEvent: {}
+[0.500805] (-) TimerEvent: {}
+[0.601041] (-) TimerEvent: {}
+[0.701265] (-) TimerEvent: {}
+[0.801480] (-) TimerEvent: {}
+[0.901702] (-) TimerEvent: {}
+[1.001955] (-) TimerEvent: {}
+[1.102210] (-) TimerEvent: {}
+[1.202426] (-) TimerEvent: {}
+[1.302638] (-) TimerEvent: {}
+[1.402853] (-) TimerEvent: {}
+[1.503086] (-) TimerEvent: {}
+[1.603296] (-) TimerEvent: {}
+[1.703511] (-) TimerEvent: {}
+[1.803730] (-) TimerEvent: {}
+[1.903945] (-) TimerEvent: {}
+[2.004277] (-) TimerEvent: {}
+[2.104502] (-) TimerEvent: {}
+[2.204733] (-) TimerEvent: {}
+[2.305007] (-) TimerEvent: {}
+[2.405259] (-) TimerEvent: {}
+[2.505494] (-) TimerEvent: {}
+[2.605755] (-) TimerEvent: {}
+[2.705984] (-) TimerEvent: {}
+[2.806290] (-) TimerEvent: {}
+[2.906518] (-) TimerEvent: {}
+[3.006742] (-) TimerEvent: {}
+[3.106969] (-) TimerEvent: {}
+[3.197896] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::set_Previous()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.198147] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:284:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.198240] (EKFLocalization) StderrLine: {'line': b'  284 |     \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[3.198297] (EKFLocalization) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.207098] (-) TimerEvent: {}
+[3.307316] (-) TimerEvent: {}
+[3.407558] (-) TimerEvent: {}
+[3.507830] (-) TimerEvent: {}
+[3.608103] (-) TimerEvent: {}
+[3.708353] (-) TimerEvent: {}
+[3.808569] (-) TimerEvent: {}
+[3.908786] (-) TimerEvent: {}
+[4.009039] (-) TimerEvent: {}
+[4.109251] (-) TimerEvent: {}
+[4.209463] (-) TimerEvent: {}
+[4.309682] (-) TimerEvent: {}
+[4.409927] (-) TimerEvent: {}
+[4.510214] (-) TimerEvent: {}
+[4.610439] (-) TimerEvent: {}
+[4.710654] (-) TimerEvent: {}
+[4.810930] (-) TimerEvent: {}
+[4.911192] (-) TimerEvent: {}
+[5.011424] (-) TimerEvent: {}
+[5.111670] (-) TimerEvent: {}
+[5.211926] (-) TimerEvent: {}
+[5.312160] (-) TimerEvent: {}
+[5.412432] (-) TimerEvent: {}
+[5.512658] (-) TimerEvent: {}
+[5.612908] (-) TimerEvent: {}
+[5.713145] (-) TimerEvent: {}
+[5.813377] (-) TimerEvent: {}
+[5.913619] (-) TimerEvent: {}
+[6.013884] (-) TimerEvent: {}
+[6.114132] (-) TimerEvent: {}
+[6.214392] (-) TimerEvent: {}
+[6.314634] (-) TimerEvent: {}
+[6.414880] (-) TimerEvent: {}
+[6.515122] (-) TimerEvent: {}
+[6.615360] (-) TimerEvent: {}
+[6.715617] (-) TimerEvent: {}
+[6.815876] (-) TimerEvent: {}
+[6.916159] (-) TimerEvent: {}
+[7.016399] (-) TimerEvent: {}
+[7.116633] (-) TimerEvent: {}
+[7.216907] (-) TimerEvent: {}
+[7.317175] (-) TimerEvent: {}
+[7.417413] (-) TimerEvent: {}
+[7.517655] (-) TimerEvent: {}
+[7.551370] (EKFLocalization) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/EKFLozalization.dir/build.make:76: CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o] Error 1\n'}
+[7.551631] (EKFLocalization) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/EKFLozalization.dir/all] Error 2\n'}
+[7.551843] (EKFLocalization) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.553674] (EKFLocalization) CommandEnded: {'returncode': 2}
+[7.581418] (EKFLocalization) JobEnded: {'identifier': 'EKFLocalization', 'rc': 2}
+[7.591811] (-) EventReactorShutdown: {}

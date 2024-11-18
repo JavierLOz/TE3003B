@@ -1,0 +1,26 @@
+[0.017s] Invoking command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target EKFLozalization[0m
+[0.070s] [ 50%] [32mBuilding CXX object CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o[0m
+[13.671s] [100%] [32m[1mLinking CXX executable EKFLozalization[0m
+[14.324s] [100%] Built target EKFLozalization
+[14.334s] Invoked command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12
+[14.363s] Invoking command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/EKFLocalization
+[14.369s] -- Install configuration: ""
+[14.369s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/lib/EKFLocalization/EKFLozalization
+[14.375s] -- Set runtime path of "/home/javier/puzzlebot_ws/src/install/EKFLocalization/lib/EKFLocalization/EKFLozalization" to ""
+[14.375s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/package_run_dependencies/EKFLocalization
+[14.375s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/parent_prefix_path/EKFLocalization
+[14.375s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/ament_prefix_path.sh
+[14.375s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/ament_prefix_path.dsv
+[14.375s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/path.sh
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/path.dsv
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.bash
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.sh
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.zsh
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.dsv
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.dsv
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/packages/EKFLocalization
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/cmake/EKFLocalizationConfig.cmake
+[14.376s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/cmake/EKFLocalizationConfig-version.cmake
+[14.377s] -- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.xml
+[14.379s] Invoked command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/EKFLocalization

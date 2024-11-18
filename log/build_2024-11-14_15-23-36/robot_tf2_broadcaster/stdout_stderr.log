@@ -1,0 +1,47 @@
+/home/javier/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:268: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+creating ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info
+writing ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/PKG-INFO
+writing dependency_links to ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/dependency_links.txt
+writing entry points to ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/entry_points.txt
+writing requirements to ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/requires.txt
+writing top-level names to ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/top_level.txt
+writing manifest file '../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/SOURCES.txt'
+reading manifest file '../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build
+creating /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib
+creating /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster
+copying robot_tf2_broadcaster/a.py -> /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster
+copying robot_tf2_broadcaster/__init__.py -> /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster
+copying robot_tf2_broadcaster/rob_pose.py -> /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster
+copying robot_tf2_broadcaster/robot_tf2_broadcaster.py -> /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster
+running install
+running install_lib
+creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster
+copying /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster/a.py -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster
+copying /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster/__init__.py -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster
+copying /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster/rob_pose.py -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster
+copying /home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/build/lib/robot_tf2_broadcaster/robot_tf2_broadcaster.py -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster
+byte-compiling /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster/a.py to a.cpython-310.pyc
+byte-compiling /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster/rob_pose.py to rob_pose.cpython-310.pyc
+byte-compiling /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster/robot_tf2_broadcaster.py to robot_tf2_broadcaster.cpython-310.pyc
+running install_data
+creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/ament_index
+creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/ament_index/resource_index
+creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/ament_index/resource_index/packages
+copying resource/robot_tf2_broadcaster -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/ament_index/resource_index/packages
+copying package.xml -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/robot_tf2_broadcaster
+creating /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/robot_tf2_broadcaster/launch
+copying launch/puzzlebot_simualtion.launch.xml -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/robot_tf2_broadcaster/launch
+copying launch/cartographer_test.launch.py -> /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/share/robot_tf2_broadcaster/launch
+running install_egg_info
+Copying ../build/robot_tf2_broadcaster/robot_tf2_broadcaster.egg-info to /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/python3.10/site-packages/robot_tf2_broadcaster-0.0.0-py3.10.egg-info
+running install_scripts
+Installing robot_tf2_broadcaster script to /home/javier/puzzlebot_ws/src/install/robot_tf2_broadcaster/lib/robot_tf2_broadcaster
+writing list of installed files to '/home/javier/puzzlebot_ws/src/build/robot_tf2_broadcaster/install.log'

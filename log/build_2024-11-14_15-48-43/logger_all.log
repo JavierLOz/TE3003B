@@ -1,0 +1,178 @@
+[0.101s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'EKFLocalization'][0m
+[0.101s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['EKFLocalization'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73b2559382e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73b255aa8820>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73b255aa8820>>)[0m
+[0.135s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.135s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.135s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.135s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.135s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.135s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.135s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/javier/puzzlebot_ws/src'
+[0.135s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.136s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.136s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.136s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.136s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.136s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.136s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.136s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extension 'ignore'
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extension 'ignore_ament_install'
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extensions ['colcon_pkg']
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extension 'colcon_pkg'
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extensions ['colcon_meta']
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extension 'colcon_meta'
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extensions ['ros']
+[0.156s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(EKFLocalization) by extension 'ros'
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'EKFLocalization' with type 'ros.ament_cmake' and name 'EKFLocalization'[0m
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extension 'ignore'
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extension 'ignore_ament_install'
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extensions ['colcon_pkg']
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extension 'colcon_pkg'
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extensions ['colcon_meta']
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extension 'colcon_meta'
+[0.158s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extensions ['ros']
+[0.159s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(aruco_detection) by extension 'ros'
+[0.159s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'aruco_detection' with type 'ros.ament_cmake' and name 'aruco_detection'[0m
+[0.159s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extension 'ignore'
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extension 'ignore_ament_install'
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extensions ['colcon_pkg']
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extension 'colcon_pkg'
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extensions ['colcon_meta']
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extension 'colcon_meta'
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extensions ['ros']
+[0.160s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(image_stream) by extension 'ros'
+[0.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'image_stream' with type 'ros.ament_cmake' and name 'image_stream'[0m
+[0.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.161s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extension 'ignore'
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extension 'ignore_ament_install'
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extensions ['colcon_pkg']
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extension 'colcon_pkg'
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extensions ['colcon_meta']
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extension 'colcon_meta'
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extensions ['ros']
+[0.162s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_model) by extension 'ros'
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'puzzlebot_model' with type 'ros.ament_python' and name 'puzzlebot_model'[0m
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extension 'ignore'
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extension 'ignore_ament_install'
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extensions ['colcon_pkg']
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extension 'colcon_pkg'
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extensions ['colcon_meta']
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extension 'colcon_meta'
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extensions ['ros']
+[0.163s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(puzzlebot_odometry) by extension 'ros'
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'puzzlebot_odometry' with type 'ros.ament_cmake' and name 'puzzlebot_odometry'[0m
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extension 'ignore'
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extension 'ignore_ament_install'
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extensions ['colcon_pkg']
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extension 'colcon_pkg'
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extensions ['colcon_meta']
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extension 'colcon_meta'
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extensions ['ros']
+[0.164s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_pose_estimator) by extension 'ros'
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'robot_pose_estimator' with type 'ros.ament_python' and name 'robot_pose_estimator'[0m
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extension 'ignore'
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extension 'ignore_ament_install'
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extensions ['colcon_pkg']
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extension 'colcon_pkg'
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extensions ['colcon_meta']
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extension 'colcon_meta'
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extensions ['ros']
+[0.165s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(robot_tf2_broadcaster) by extension 'ros'
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'robot_tf2_broadcaster' with type 'ros.ament_python' and name 'robot_tf2_broadcaster'[0m
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extension 'ignore'
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extension 'ignore_ament_install'
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extensions ['colcon_pkg']
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extension 'colcon_pkg'
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extensions ['colcon_meta']
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extension 'colcon_meta'
+[0.166s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extensions ['ros']
+[0.167s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ugv02_cartographer) by extension 'ros'
+[0.167s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'ugv02_cartographer' with type 'ros.ament_cmake' and name 'ugv02_cartographer'[0m
+[0.167s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.167s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.167s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.167s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.167s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.183s] [34mcolcon.colcon_core.package_selection[0m [1;30mINFO[0m Skipping not selected package 'aruco_detection' in 'aruco_detection'
+[0.183s] [34mcolcon.colcon_core.package_selection[0m [1;30mINFO[0m Skipping not selected package 'image_stream' in 'image_stream'
+[0.183s] [34mcolcon.colcon_core.package_selection[0m [1;30mINFO[0m Skipping not selected package 'puzzlebot_model' in 'puzzlebot_model'
+[0.183s] [34mcolcon.colcon_core.package_selection[0m [1;30mINFO[0m Skipping not selected package 'puzzlebot_odometry' in 'puzzlebot_odometry'
+[0.183s] [34mcolcon.colcon_core.package_selection[0m [1;30mINFO[0m Skipping not selected package 'robot_pose_estimator' in 'robot_pose_estimator'
+[0.183s] [34mcolcon.colcon_core.package_selection[0m [1;30mINFO[0m Skipping not selected package 'robot_tf2_broadcaster' in 'robot_tf2_broadcaster'
+[0.183s] [34mcolcon.colcon_core.package_selection[0m [1;30mINFO[0m Skipping not selected package 'ugv02_cartographer' in 'ugv02_cartographer'
+[0.184s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.184s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.186s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 290 installed packages in /opt/ros/humble[0m
+[0.187s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'cmake_target' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'cmake_clean_first' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'cmake_force_configure' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'ament_cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'EKFLocalization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'EKFLocalization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/javier/puzzlebot_ws/src/build/EKFLocalization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/javier/puzzlebot_ws/src/install/EKFLocalization', 'merge_install': False, 'path': '/home/javier/puzzlebot_ws/src/EKFLocalization', 'symlink_install': False, 'test_result_base': None}[0m
+[0.220s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.221s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.221s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/javier/puzzlebot_ws/src/EKFLocalization' with build type 'ament_cmake'
+[0.221s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/javier/puzzlebot_ws/src/EKFLocalization'
+[0.223s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.224s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.224s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.238s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12[0m
+[7.212s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12[0m
+[7.232s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(EKFLocalization)
+[7.234s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/javier/puzzlebot_ws/src/install/EKFLocalization' for CMake module files
+[7.235s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/javier/puzzlebot_ws/src/install/EKFLocalization' for CMake config files
+[7.235s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/javier/puzzlebot_ws/src/install/EKFLocalization/bin'
+[7.235s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/javier/puzzlebot_ws/src/install/EKFLocalization/lib/pkgconfig/EKFLocalization.pc'
+[7.235s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/javier/puzzlebot_ws/src/install/EKFLocalization/lib/python3.10/site-packages'
+[7.235s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/javier/puzzlebot_ws/src/install/EKFLocalization/bin'
+[7.236s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.ps1'
+[7.236s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.dsv'
+[7.237s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.sh'
+[7.238s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.bash'
+[7.238s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.zsh'
+[7.239s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/javier/puzzlebot_ws/src/install/EKFLocalization/share/colcon-core/packages/EKFLocalization)
+[7.249s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[7.250s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[7.250s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '2'[0m
+[7.250s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[7.257s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.257s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.257s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[7.268s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[7.268s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/javier/puzzlebot_ws/src/install/local_setup.ps1'
+[7.269s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/javier/puzzlebot_ws/src/install/_local_setup_util_ps1.py'
+[7.271s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/javier/puzzlebot_ws/src/install/setup.ps1'
+[7.272s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/javier/puzzlebot_ws/src/install/local_setup.sh'
+[7.273s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/javier/puzzlebot_ws/src/install/_local_setup_util_sh.py'
+[7.274s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/javier/puzzlebot_ws/src/install/setup.sh'
+[7.275s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/javier/puzzlebot_ws/src/install/local_setup.bash'
+[7.275s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/javier/puzzlebot_ws/src/install/setup.bash'
+[7.276s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/javier/puzzlebot_ws/src/install/local_setup.zsh'
+[7.276s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/javier/puzzlebot_ws/src/install/setup.zsh'

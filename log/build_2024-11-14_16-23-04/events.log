@@ -1,0 +1,184 @@
+[0.000000] (-) TimerEvent: {}
+[0.000299] (-) JobUnselected: {'identifier': 'aruco_detection'}
+[0.000326] (-) JobUnselected: {'identifier': 'image_stream'}
+[0.000343] (-) JobUnselected: {'identifier': 'puzzlebot_model'}
+[0.000359] (-) JobUnselected: {'identifier': 'puzzlebot_odometry'}
+[0.000373] (-) JobUnselected: {'identifier': 'robot_pose_estimator'}
+[0.000386] (-) JobUnselected: {'identifier': 'robot_tf2_broadcaster'}
+[0.000399] (-) JobUnselected: {'identifier': 'ugv02_cartographer'}
+[0.000414] (EKFLocalization) JobQueued: {'identifier': 'EKFLocalization', 'dependencies': OrderedDict()}
+[0.000433] (EKFLocalization) JobStarted: {'identifier': 'EKFLocalization'}
+[0.013340] (EKFLocalization) JobProgress: {'identifier': 'EKFLocalization', 'progress': 'cmake'}
+[0.014650] (EKFLocalization) JobProgress: {'identifier': 'EKFLocalization', 'progress': 'build'}
+[0.014901] (EKFLocalization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/javier/puzzlebot_ws/src/build/EKFLocalization', '--', '-j12', '-l12'], 'cwd': '/home/javier/puzzlebot_ws/src/build/EKFLocalization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'javier'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/javier'), ('OLDPWD', '/home/javier/puzzlebot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('SYSTEMD_EXEC_PID', '2319'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5509'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'javier'), ('JOURNAL_STREAM', '8:9949'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'javier'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/javier/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/javier-ROG-Strix-G531GV-G531GV:@/tmp/.ICE-unix/2130,unix/javier-ROG-Strix-G531GV-G531GV:/tmp/.ICE-unix/2130'), ('INVOCATION_ID', '7220dc1058144348963468d69081ce48'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9VEBX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:83ee4ec3-a46c-4cbe-8d78-e45778467f4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/javier/puzzlebot_ws/src/build/EKFLocalization'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.053348] (EKFLocalization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target EKFLozalization\x1b[0m\n'}
+[0.070535] (EKFLocalization) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o\x1b[0m\n'}
+[0.099665] (-) TimerEvent: {}
+[0.199886] (-) TimerEvent: {}
+[0.300166] (-) TimerEvent: {}
+[0.400428] (-) TimerEvent: {}
+[0.500642] (-) TimerEvent: {}
+[0.600856] (-) TimerEvent: {}
+[0.701075] (-) TimerEvent: {}
+[0.801339] (-) TimerEvent: {}
+[0.901602] (-) TimerEvent: {}
+[1.001890] (-) TimerEvent: {}
+[1.102123] (-) TimerEvent: {}
+[1.202347] (-) TimerEvent: {}
+[1.302653] (-) TimerEvent: {}
+[1.402872] (-) TimerEvent: {}
+[1.503119] (-) TimerEvent: {}
+[1.603428] (-) TimerEvent: {}
+[1.703672] (-) TimerEvent: {}
+[1.803942] (-) TimerEvent: {}
+[1.904184] (-) TimerEvent: {}
+[2.004490] (-) TimerEvent: {}
+[2.104732] (-) TimerEvent: {}
+[2.204977] (-) TimerEvent: {}
+[2.305217] (-) TimerEvent: {}
+[2.405465] (-) TimerEvent: {}
+[2.505702] (-) TimerEvent: {}
+[2.605985] (-) TimerEvent: {}
+[2.706259] (-) TimerEvent: {}
+[2.806536] (-) TimerEvent: {}
+[2.906794] (-) TimerEvent: {}
+[3.007041] (-) TimerEvent: {}
+[3.107310] (-) TimerEvent: {}
+[3.207551] (-) TimerEvent: {}
+[3.307794] (-) TimerEvent: {}
+[3.408048] (-) TimerEvent: {}
+[3.508317] (-) TimerEvent: {}
+[3.608568] (-) TimerEvent: {}
+[3.708811] (-) TimerEvent: {}
+[3.809061] (-) TimerEvent: {}
+[3.909319] (-) TimerEvent: {}
+[4.009598] (-) TimerEvent: {}
+[4.109843] (-) TimerEvent: {}
+[4.210098] (-) TimerEvent: {}
+[4.310391] (-) TimerEvent: {}
+[4.410649] (-) TimerEvent: {}
+[4.510890] (-) TimerEvent: {}
+[4.611130] (-) TimerEvent: {}
+[4.711400] (-) TimerEvent: {}
+[4.811641] (-) TimerEvent: {}
+[4.911921] (-) TimerEvent: {}
+[5.012194] (-) TimerEvent: {}
+[5.112439] (-) TimerEvent: {}
+[5.212673] (-) TimerEvent: {}
+[5.312913] (-) TimerEvent: {}
+[5.413186] (-) TimerEvent: {}
+[5.513457] (-) TimerEvent: {}
+[5.613703] (-) TimerEvent: {}
+[5.713970] (-) TimerEvent: {}
+[5.814256] (-) TimerEvent: {}
+[5.914498] (-) TimerEvent: {}
+[6.014737] (-) TimerEvent: {}
+[6.114976] (-) TimerEvent: {}
+[6.215223] (-) TimerEvent: {}
+[6.315468] (-) TimerEvent: {}
+[6.415712] (-) TimerEvent: {}
+[6.515984] (-) TimerEvent: {}
+[6.616227] (-) TimerEvent: {}
+[6.716616] (-) TimerEvent: {}
+[6.816855] (-) TimerEvent: {}
+[6.917091] (-) TimerEvent: {}
+[7.017330] (-) TimerEvent: {}
+[7.117567] (-) TimerEvent: {}
+[7.217802] (-) TimerEvent: {}
+[7.318036] (-) TimerEvent: {}
+[7.418313] (-) TimerEvent: {}
+[7.518579] (-) TimerEvent: {}
+[7.618821] (-) TimerEvent: {}
+[7.719094] (-) TimerEvent: {}
+[7.819404] (-) TimerEvent: {}
+[7.919676] (-) TimerEvent: {}
+[8.019957] (-) TimerEvent: {}
+[8.120213] (-) TimerEvent: {}
+[8.220531] (-) TimerEvent: {}
+[8.320759] (-) TimerEvent: {}
+[8.421024] (-) TimerEvent: {}
+[8.521256] (-) TimerEvent: {}
+[8.621565] (-) TimerEvent: {}
+[8.721834] (-) TimerEvent: {}
+[8.822062] (-) TimerEvent: {}
+[8.922327] (-) TimerEvent: {}
+[9.022564] (-) TimerEvent: {}
+[9.122824] (-) TimerEvent: {}
+[9.223053] (-) TimerEvent: {}
+[9.323331] (-) TimerEvent: {}
+[9.423568] (-) TimerEvent: {}
+[9.523800] (-) TimerEvent: {}
+[9.624058] (-) TimerEvent: {}
+[9.724295] (-) TimerEvent: {}
+[9.824527] (-) TimerEvent: {}
+[9.924760] (-) TimerEvent: {}
+[10.025014] (-) TimerEvent: {}
+[10.125309] (-) TimerEvent: {}
+[10.225581] (-) TimerEvent: {}
+[10.325841] (-) TimerEvent: {}
+[10.426076] (-) TimerEvent: {}
+[10.526385] (-) TimerEvent: {}
+[10.626617] (-) TimerEvent: {}
+[10.726875] (-) TimerEvent: {}
+[10.827110] (-) TimerEvent: {}
+[10.927343] (-) TimerEvent: {}
+[11.027608] (-) TimerEvent: {}
+[11.127839] (-) TimerEvent: {}
+[11.228075] (-) TimerEvent: {}
+[11.328398] (-) TimerEvent: {}
+[11.428693] (-) TimerEvent: {}
+[11.528950] (-) TimerEvent: {}
+[11.629222] (-) TimerEvent: {}
+[11.729563] (-) TimerEvent: {}
+[11.829820] (-) TimerEvent: {}
+[11.930051] (-) TimerEvent: {}
+[12.030289] (-) TimerEvent: {}
+[12.130547] (-) TimerEvent: {}
+[12.230778] (-) TimerEvent: {}
+[12.331008] (-) TimerEvent: {}
+[12.431345] (-) TimerEvent: {}
+[12.531677] (-) TimerEvent: {}
+[12.632360] (-) TimerEvent: {}
+[12.732871] (-) TimerEvent: {}
+[12.833120] (-) TimerEvent: {}
+[12.933384] (-) TimerEvent: {}
+[13.033648] (-) TimerEvent: {}
+[13.133890] (-) TimerEvent: {}
+[13.234134] (-) TimerEvent: {}
+[13.334423] (-) TimerEvent: {}
+[13.434695] (-) TimerEvent: {}
+[13.534935] (-) TimerEvent: {}
+[13.635190] (-) TimerEvent: {}
+[13.670868] (EKFLocalization) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable EKFLozalization\x1b[0m\n'}
+[13.735285] (-) TimerEvent: {}
+[13.835585] (-) TimerEvent: {}
+[13.935917] (-) TimerEvent: {}
+[14.036181] (-) TimerEvent: {}
+[14.136432] (-) TimerEvent: {}
+[14.236640] (-) TimerEvent: {}
+[14.324641] (EKFLocalization) StdoutLine: {'line': b'[100%] Built target EKFLozalization\n'}
+[14.333926] (EKFLocalization) CommandEnded: {'returncode': 0}
+[14.336715] (-) TimerEvent: {}
+[14.355269] (EKFLocalization) JobProgress: {'identifier': 'EKFLocalization', 'progress': 'install'}
+[14.363159] (EKFLocalization) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/javier/puzzlebot_ws/src/build/EKFLocalization'], 'cwd': '/home/javier/puzzlebot_ws/src/build/EKFLocalization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'javier'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/javier'), ('OLDPWD', '/home/javier/puzzlebot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('SYSTEMD_EXEC_PID', '2319'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5509'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'javier'), ('JOURNAL_STREAM', '8:9949'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'javier'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/javier/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/javier-ROG-Strix-G531GV-G531GV:@/tmp/.ICE-unix/2130,unix/javier-ROG-Strix-G531GV-G531GV:/tmp/.ICE-unix/2130'), ('INVOCATION_ID', '7220dc1058144348963468d69081ce48'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9VEBX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:83ee4ec3-a46c-4cbe-8d78-e45778467f4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/javier/puzzlebot_ws/src/build/EKFLocalization'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.369641] (EKFLocalization) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.369868] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/lib/EKFLocalization/EKFLozalization\n'}
+[14.375048] (EKFLocalization) StdoutLine: {'line': b'-- Set runtime path of "/home/javier/puzzlebot_ws/src/install/EKFLocalization/lib/EKFLocalization/EKFLozalization" to ""\n'}
+[14.375237] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/package_run_dependencies/EKFLocalization\n'}
+[14.375333] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/parent_prefix_path/EKFLocalization\n'}
+[14.375447] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/ament_prefix_path.sh\n'}
+[14.375604] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/ament_prefix_path.dsv\n'}
+[14.375757] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/path.sh\n'}
+[14.375871] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/path.dsv\n'}
+[14.375996] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.bash\n'}
+[14.376096] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.sh\n'}
+[14.376203] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.zsh\n'}
+[14.376388] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.dsv\n'}
+[14.376513] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.dsv\n'}
+[14.376624] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/packages/EKFLocalization\n'}
+[14.376762] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/cmake/EKFLocalizationConfig.cmake\n'}
+[14.376872] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/cmake/EKFLocalizationConfig-version.cmake\n'}
+[14.376946] (EKFLocalization) StdoutLine: {'line': b'-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.xml\n'}
+[14.378703] (EKFLocalization) CommandEnded: {'returncode': 0}
+[14.416794] (EKFLocalization) JobEnded: {'identifier': 'EKFLocalization', 'rc': 0}
+[14.417405] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+Invoking command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/javier/puzzlebot_ws/src/EKFLocalization -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/EKFLocalization
+Invoked command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/javier/puzzlebot_ws/src/EKFLocalization -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/EKFLocalization
+Invoking command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12
+Invoked command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12

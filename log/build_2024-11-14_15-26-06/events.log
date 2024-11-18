@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000215] (-) JobUnselected: {'identifier': 'EKFLocalization'}
+[0.000618] (-) JobUnselected: {'identifier': 'aruco_detection'}
+[0.000636] (-) JobUnselected: {'identifier': 'image_stream'}
+[0.000703] (-) JobUnselected: {'identifier': 'puzzlebot_model'}
+[0.000719] (-) JobUnselected: {'identifier': 'puzzlebot_odometry'}
+[0.000740] (-) JobUnselected: {'identifier': 'robot_pose_estimator'}
+[0.000803] (-) JobUnselected: {'identifier': 'robot_tf2_broadcaster'}
+[0.000818] (-) JobUnselected: {'identifier': 'ugv02_cartographer'}
+[0.000952] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+Invoking command in '/home/javier/puzzlebot_ws/src/build/ugv02_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/javier/puzzlebot_ws/src/ugv02_cartographer -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/ugv02_cartographer
+Invoked command in '/home/javier/puzzlebot_ws/src/build/ugv02_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/javier/puzzlebot_ws/src/ugv02_cartographer -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/ugv02_cartographer
+Invoking command in '/home/javier/puzzlebot_ws/src/build/ugv02_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/ugv02_cartographer -- -j12 -l12
+Invoked command in '/home/javier/puzzlebot_ws/src/build/ugv02_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/ugv02_cartographer -- -j12 -l12
+Invoking command in '/home/javier/puzzlebot_ws/src/build/ugv02_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/ugv02_cartographer
+Invoked command in '/home/javier/puzzlebot_ws/src/build/ugv02_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/javier/puzzlebot_ws/src/build/ugv02_cartographer

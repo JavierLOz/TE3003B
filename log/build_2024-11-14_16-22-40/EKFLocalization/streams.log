@@ -1,0 +1,11 @@
+[0.016s] Invoking command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target EKFLozalization[0m
+[0.070s] [ 50%] [32mBuilding CXX object CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o[0m
+[3.197s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:[m[K In member function ‘[01m[Kvoid EKFLocalization::set_Previous()[m[K’:
+[3.197s] [01m[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:284:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[3.197s]   284 |     [01;31m[K}[m[K
+[3.197s]       |     [01;31m[K^[m[K
+[7.551s] gmake[2]: *** [CMakeFiles/EKFLozalization.dir/build.make:76: CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o] Error 1
+[7.551s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/EKFLozalization.dir/all] Error 2
+[7.551s] gmake: *** [Makefile:146: all] Error 2
+[7.553s] Invoked command in '/home/javier/puzzlebot_ws/src/build/EKFLocalization' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/EKFLocalization -- -j12 -l12

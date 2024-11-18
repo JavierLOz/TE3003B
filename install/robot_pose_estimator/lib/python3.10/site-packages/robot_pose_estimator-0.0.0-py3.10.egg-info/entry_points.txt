@@ -1,0 +1,2 @@
+[console_scripts]
+robot_pose_estimator = robot_pose_estimator.robot_pose_estimator:main

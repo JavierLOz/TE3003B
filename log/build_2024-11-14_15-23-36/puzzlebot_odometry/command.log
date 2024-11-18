@@ -1,0 +1,3 @@
+Invoking command in '/home/javier/puzzlebot_ws/src/build/puzzlebot_odometry': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/javier/puzzlebot_ws/src/puzzlebot_odometry -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/puzzlebot_odometry
+Invoked command in '/home/javier/puzzlebot_ws/src/build/puzzlebot_odometry' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/javier/puzzlebot_ws/src/puzzlebot_odometry -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/puzzlebot_odometry
+Invoking command in '/home/javier/puzzlebot_ws/src/build/puzzlebot_odometry': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/puzzlebot_odometry -- -j12 -l12

@@ -288,14 +288,14 @@ class EKFLocalization:
         
         self.Calc_miuHat() # Ideal calculated pose
         self.Calc_Gradient_h() # Pose Model linerization
-        self.Calc_SigmaHat() # Uncertainty of Ideal calculated pose
+        self.Calc_SigmaHat() # Uncertainty of Ideal calculated pose cov
         if (landmark_status):
             self.Calc_zHat() # Ideal observed pose
             self.Calc_Gradient_g() # Observation Model linerization
             self.Calc_Z() # Uncertainty of Ideal observed pose
             self.Calc_KalmanGain() # Kalman Filter Gain!
             self.Calc_miu() # Estimated pose
-            self.Calc_Sigma() # Estimated uncertainty of pose
+            self.Calc_Sigma() # Estimated uncertainty of pose cov
         self.Set_Previous()
 
 if __name__=='__main__':

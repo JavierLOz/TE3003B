@@ -1,0 +1,306 @@
+[0.000000] (-) TimerEvent: {}
+[0.000340] (-) JobUnselected: {'identifier': 'aruco_detection'}
+[0.000746] (-) JobUnselected: {'identifier': 'image_stream'}
+[0.000789] (-) JobUnselected: {'identifier': 'puzzlebot_model'}
+[0.000806] (-) JobUnselected: {'identifier': 'puzzlebot_odometry'}
+[0.000821] (-) JobUnselected: {'identifier': 'robot_pose_estimator'}
+[0.000835] (-) JobUnselected: {'identifier': 'robot_tf2_broadcaster'}
+[0.000849] (-) JobUnselected: {'identifier': 'ugv02_cartographer'}
+[0.000864] (EKFLocalization) JobQueued: {'identifier': 'EKFLocalization', 'dependencies': OrderedDict()}
+[0.000882] (EKFLocalization) JobStarted: {'identifier': 'EKFLocalization'}
+[0.013195] (EKFLocalization) JobProgress: {'identifier': 'EKFLocalization', 'progress': 'cmake'}
+[0.013896] (EKFLocalization) JobProgress: {'identifier': 'EKFLocalization', 'progress': 'build'}
+[0.014677] (EKFLocalization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/javier/puzzlebot_ws/src/build/EKFLocalization', '--', '-j12', '-l12'], 'cwd': '/home/javier/puzzlebot_ws/src/build/EKFLocalization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'javier'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/javier'), ('OLDPWD', '/home/javier/puzzlebot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('SYSTEMD_EXEC_PID', '2319'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5509'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'javier'), ('JOURNAL_STREAM', '8:9949'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'javier'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/javier/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/javier-ROG-Strix-G531GV-G531GV:@/tmp/.ICE-unix/2130,unix/javier-ROG-Strix-G531GV-G531GV:/tmp/.ICE-unix/2130'), ('INVOCATION_ID', '7220dc1058144348963468d69081ce48'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9VEBX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:83ee4ec3-a46c-4cbe-8d78-e45778467f4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/javier/puzzlebot_ws/src/build/EKFLocalization'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.053262] (EKFLocalization) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target EKFLozalization\x1b[0m\n'}
+[0.071654] (EKFLocalization) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o\x1b[0m\n'}
+[0.099692] (-) TimerEvent: {}
+[0.199888] (-) TimerEvent: {}
+[0.300123] (-) TimerEvent: {}
+[0.400398] (-) TimerEvent: {}
+[0.500638] (-) TimerEvent: {}
+[0.600861] (-) TimerEvent: {}
+[0.701093] (-) TimerEvent: {}
+[0.801361] (-) TimerEvent: {}
+[0.901596] (-) TimerEvent: {}
+[1.001823] (-) TimerEvent: {}
+[1.102053] (-) TimerEvent: {}
+[1.202307] (-) TimerEvent: {}
+[1.302518] (-) TimerEvent: {}
+[1.402734] (-) TimerEvent: {}
+[1.502972] (-) TimerEvent: {}
+[1.603205] (-) TimerEvent: {}
+[1.703442] (-) TimerEvent: {}
+[1.803658] (-) TimerEvent: {}
+[1.903873] (-) TimerEvent: {}
+[2.004089] (-) TimerEvent: {}
+[2.104295] (-) TimerEvent: {}
+[2.204521] (-) TimerEvent: {}
+[2.304763] (-) TimerEvent: {}
+[2.405010] (-) TimerEvent: {}
+[2.505259] (-) TimerEvent: {}
+[2.605486] (-) TimerEvent: {}
+[2.705710] (-) TimerEvent: {}
+[2.718230] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:284:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbit-field \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::PoseEstimation(float, bool)\x1b[m\x1b[K\xe2\x80\x99 has non-integral type \xe2\x80\x98\x1b[01m\x1b[Kvoid (EKFLocalization::)(float, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.718565] (EKFLocalization) StderrLine: {'line': b'  284 |     void \x1b[01;31m\x1b[KPoseEstimation\x1b[m\x1b[K(float dt_, bool landmark_status):\n'}
+[2.718627] (EKFLocalization) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.718679] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:291:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before numeric constant\n'}
+[2.718732] (EKFLocalization) StderrLine: {'line': b'  291 |         z_static(\x1b[01;31m\x1b[K0\x1b[m\x1b[K) = 0.0;// landmark_pos(0);\n'}
+[2.718780] (EKFLocalization) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.718828] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:291:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[2.718879] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:291:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid pure specifier (only \xe2\x80\x98\x1b[01m\x1b[K= 0\x1b[m\x1b[K\xe2\x80\x99 is allowed) before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.718935] (EKFLocalization) StderrLine: {'line': b'  291 |         z_static(0) = 0.0\x1b[01;31m\x1b[K;\x1b[m\x1b[K// landmark_pos(0);\n'}
+[2.719030] (EKFLocalization) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.719127] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:291:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Kz_static\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.719181] (EKFLocalization) StderrLine: {'line': b'  291 |         \x1b[01;31m\x1b[Kz_static\x1b[m\x1b[K(0) = 0.0;// landmark_pos(0);\n'}
+[2.719231] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.719312] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:291:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint EKFLocalization::z_static(int)\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[2.719364] (EKFLocalization) StderrLine: {'line': b'  291 |         z_static(0) = 0.0\x1b[01;31m\x1b[K;\x1b[m\x1b[K// landmark_pos(0);\n'}
+[2.719413] (EKFLocalization) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.719461] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:64:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2f EKFLocalization::z_static\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.719510] (EKFLocalization) StderrLine: {'line': b'   64 |     Eigen::Vector2f \x1b[01;36m\x1b[Kz_static\x1b[m\x1b[K = Eigen::Vector2f::Zero();\n'}
+[2.719558] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.719605] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:292:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before numeric constant\n'}
+[2.719653] (EKFLocalization) StderrLine: {'line': b'  292 |         z_static(\x1b[01;31m\x1b[K1\x1b[m\x1b[K) = 0.0; //landmark_pos(1);\n'}
+[2.719700] (EKFLocalization) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.719749] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:292:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[2.719802] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:292:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid pure specifier (only \xe2\x80\x98\x1b[01m\x1b[K= 0\x1b[m\x1b[K\xe2\x80\x99 is allowed) before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.719856] (EKFLocalization) StderrLine: {'line': b'  292 |         z_static(1) = 0.0\x1b[01;31m\x1b[K;\x1b[m\x1b[K //landmark_pos(1);\n'}
+[2.719908] (EKFLocalization) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.719986] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:292:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Kz_static\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.720173] (EKFLocalization) StderrLine: {'line': b'  292 |         \x1b[01;31m\x1b[Kz_static\x1b[m\x1b[K(1) = 0.0; //landmark_pos(1);\n'}
+[2.720244] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.720324] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:292:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint EKFLocalization::z_static(int)\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[2.720379] (EKFLocalization) StderrLine: {'line': b'  292 |         z_static(1) = 0.0\x1b[01;31m\x1b[K;\x1b[m\x1b[K //landmark_pos(1);\n'}
+[2.720428] (EKFLocalization) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.720476] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:64:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2f EKFLocalization::z_static\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.720531] (EKFLocalization) StderrLine: {'line': b'   64 |     Eigen::Vector2f \x1b[01;36m\x1b[Kz_static\x1b[m\x1b[K = Eigen::Vector2f::Zero();\n'}
+[2.720584] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.720633] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:302:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkl\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.720682] (EKFLocalization) StderrLine: {'line': b'  302 |         \x1b[01;31m\x1b[Kkl\x1b[m\x1b[K = 0.0; //calibrated_klr(0);\n'}
+[2.720729] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.721347] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:303:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkr\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.721589] (EKFLocalization) StderrLine: {'line': b'  303 |         \x1b[01;31m\x1b[Kkr\x1b[m\x1b[K = 0.0; //calibrated_klr(1);\n'}
+[2.721651] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.721708] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:305:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before numeric constant\n'}
+[2.721763] (EKFLocalization) StderrLine: {'line': b'  305 |         R(\x1b[01;31m\x1b[K0\x1b[m\x1b[K,0) = 0.1;\n'}
+[2.721816] (EKFLocalization) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.721868] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:305:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[2.721922] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:305:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid pure specifier (only \xe2\x80\x98\x1b[01m\x1b[K= 0\x1b[m\x1b[K\xe2\x80\x99 is allowed) before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.721976] (EKFLocalization) StderrLine: {'line': b'  305 |         R(0,0) = 0.1\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.722028] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.722144] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:305:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KR\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.722268] (EKFLocalization) StderrLine: {'line': b'  305 |         \x1b[01;31m\x1b[KR\x1b[m\x1b[K(0,0) = 0.1;\n'}
+[2.722341] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.722389] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:305:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint EKFLocalization::R(int)\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[2.722438] (EKFLocalization) StderrLine: {'line': b'  305 |         R(0,0) = 0.1\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.722487] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.722534] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:83:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix2f EKFLocalization::R\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.722583] (EKFLocalization) StderrLine: {'line': b'   83 |     Eigen::Matrix2f \x1b[01;36m\x1b[KR\x1b[m\x1b[K = Eigen::Matrix2f::Zero();    // Current Robot Observation Noise Covariance Matrix\n'}
+[2.722632] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.722680] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:306:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before numeric constant\n'}
+[2.722728] (EKFLocalization) StderrLine: {'line': b'  306 |         R(\x1b[01;31m\x1b[K1\x1b[m\x1b[K,1) = 0.2;\n'}
+[2.722775] (EKFLocalization) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.722822] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:306:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[2.722871] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:306:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid pure specifier (only \xe2\x80\x98\x1b[01m\x1b[K= 0\x1b[m\x1b[K\xe2\x80\x99 is allowed) before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.722920] (EKFLocalization) StderrLine: {'line': b'  306 |         R(1,1) = 0.2\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.722968] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.723020] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:306:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KR\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.723077] (EKFLocalization) StderrLine: {'line': b'  306 |         \x1b[01;31m\x1b[KR\x1b[m\x1b[K(1,1) = 0.2;\n'}
+[2.723130] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.723204] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:306:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint EKFLocalization::R(int)\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[2.723266] (EKFLocalization) StderrLine: {'line': b'  306 |         R(1,1) = 0.2\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.723416] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.723464] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:83:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix2f EKFLocalization::R\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.723522] (EKFLocalization) StderrLine: {'line': b'   83 |     Eigen::Matrix2f \x1b[01;36m\x1b[KR\x1b[m\x1b[K = Eigen::Matrix2f::Zero();    // Current Robot Observation Noise Covariance Matrix\n'}
+[2.723575] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.723622] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:309:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdt\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.723676] (EKFLocalization) StderrLine: {'line': b'  309 |         \x1b[01;31m\x1b[Kdt\x1b[m\x1b[K = dt_;\n'}
+[2.723723] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.723769] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:311:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KEstimate_Q\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.723820] (EKFLocalization) StderrLine: {'line': b'  311 |         \x1b[01;31m\x1b[KEstimate_Q\x1b[m\x1b[K()\n'}
+[2.723889] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.723962] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:311:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.724024] (EKFLocalization) StderrLine: {'line': b'  311 |         Estimate_Q(\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[2.724078] (EKFLocalization) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.724134] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.724773] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:312:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KQ\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.724888] (EKFLocalization) StderrLine: {'line': b'  312 |         \x1b[01;31m\x1b[KQ\x1b[m\x1b[K = np.array([[0.5, 0.01, 0.01],\n'}
+[2.724936] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.724984] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:317:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KCalc_Gradient_h\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.725034] (EKFLocalization) StderrLine: {'line': b'  317 |         \x1b[01;31m\x1b[KCalc_Gradient_h\x1b[m\x1b[K(); // Pose Model linerization\n'}
+[2.725082] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.725129] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:318:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KCalc_SigmaHat\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.725185] (EKFLocalization) StderrLine: {'line': b'  318 |         \x1b[01;31m\x1b[KCalc_SigmaHat\x1b[m\x1b[K(); // Uncertainty of Ideal calculated pose\n'}
+[2.725266] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.725334] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:319:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.725384] (EKFLocalization) StderrLine: {'line': b'  319 |         \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (landmark_status){\n'}
+[2.725430] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.726050] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:328:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[2.726130] (EKFLocalization) StderrLine: {'line': b'  328 |     }\n'}
+[2.726186] (EKFLocalization) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.726276] (EKFLocalization) StderrLine: {'line': b'      |      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.805796] (-) TimerEvent: {}
+[2.906018] (-) TimerEvent: {}
+[3.006263] (-) TimerEvent: {}
+[3.012722] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::control_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.012879] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:124:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 has non-pointer type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist_<std::allocator<void> >::_linear_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[3.012943] (EKFLocalization) StderrLine: {'line': b'  124 |       this->v_k = msg->linear\x1b[01;31m\x1b[K->\x1b[m\x1b[Kx;\n'}
+[3.012996] (EKFLocalization) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.013046] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:125:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 has non-pointer type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist_<std::allocator<void> >::_angular_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[3.013107] (EKFLocalization) StderrLine: {'line': b'  125 |       this->w_k = msg->angular\x1b[01;31m\x1b[K->\x1b[m\x1b[Kz;\n'}
+[3.013155] (EKFLocalization) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.013203] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat EKFLocalization::wrap_to_pi(float&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.013286] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:133:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::numbers\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.013365] (EKFLocalization) StderrLine: {'line': b'  133 |       if (theta > std::\x1b[01;31m\x1b[Knumbers\x1b[m\x1b[K::pi){\n'}
+[3.013414] (EKFLocalization) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.013461] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:134:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::numbers\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.013513] (EKFLocalization) StderrLine: {'line': b'  134 |         theta = theta - 2 * std::\x1b[01;31m\x1b[Knumbers\x1b[m\x1b[K::pi;\n'}
+[3.013560] (EKFLocalization) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.013606] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:136:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::numbers\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.013685] (EKFLocalization) StderrLine: {'line': b'  136 |       else if (theta < std::\x1b[01;31m\x1b[Knumbers\x1b[m\x1b[K::pi){\n'}
+[3.013739] (EKFLocalization) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.013800] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:137:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::numbers\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.013853] (EKFLocalization) StderrLine: {'line': b'  137 |         theta = theta + 2 * std::\x1b[01;31m\x1b[Knumbers\x1b[m\x1b[K::pi;\n'}
+[3.013901] (EKFLocalization) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.035550] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::calc_SigmaD()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.035978] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:164:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsigmaD\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KSigmaD\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.036055] (EKFLocalization) StderrLine: {'line': b'  164 |       \x1b[01;31m\x1b[KsigmaD\x1b[m\x1b[K(0,0) = kr * std::abs(wR);\n'}
+[3.036159] (EKFLocalization) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.036247] (EKFLocalization) StderrLine: {'line': b'      |       \x1b[32m\x1b[KSigmaD\x1b[m\x1b[K\n'}
+[3.039970] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:164:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkr\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KkR\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.040066] (EKFLocalization) StderrLine: {'line': b'  164 |       sigmaD(0,0) = \x1b[01;31m\x1b[Kkr\x1b[m\x1b[K * std::abs(wR);\n'}
+[3.040124] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.040175] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KkR\x1b[m\x1b[K\n'}
+[3.044054] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:165:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkl\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KkL\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.044241] (EKFLocalization) StderrLine: {'line': b'  165 |       sigmaD(1,1) = \x1b[01;31m\x1b[Kkl\x1b[m\x1b[K * std::abs(wL);\n'}
+[3.044331] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.044386] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KkL\x1b[m\x1b[K\n'}
+[3.106296] (-) TimerEvent: {}
+[3.125151] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::calc_zHat()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.125348] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:195:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind non-const lvalue reference of type \xe2\x80\x98\x1b[01m\x1b[Kfloat&\x1b[m\x1b[K\xe2\x80\x99 to an rvalue of type \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.125413] (EKFLocalization) StderrLine: {'line': b'  195 |       z(1) = wrap_to_pi(\x1b[01;31m\x1b[Katan2(delta_zy,delta_zx)\x1b[m\x1b[K);\n'}
+[3.125465] (EKFLocalization) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.125514] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:132:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kfloat EKFLocalization::wrap_to_pi(float&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.125565] (EKFLocalization) StderrLine: {'line': b'  132 |     float wrap_to_pi(\x1b[01;36m\x1b[Kfloat& theta\x1b[m\x1b[K){\n'}
+[3.125614] (EKFLocalization) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.137884] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::calc_Z()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.138032] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:208:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.138090] (EKFLocalization) StderrLine: {'line': b'  208 |       Z = G * Sigma * \x1b[01;31m\x1b[Kg\x1b[m\x1b[K.transpose() + R;\n'}
+[3.138142] (EKFLocalization) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.204093] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::calc_Sigma()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.204305] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:221:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kk\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.204413] (EKFLocalization) StderrLine: {'line': b'  221 |       Sigma = (I_3x3 - \x1b[01;31m\x1b[Kk\x1b[m\x1b[K * G) * Sigma;\n'}
+[3.204500] (EKFLocalization) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.205514] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::publish_result()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.205649] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:262:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.205743] (EKFLocalization) StderrLine: {'line': b'  262 |       odometry_msg.pose.covariance[0]  = Sigma[\x1b[01;35m\x1b[K0\x1b[m\x1b[K, 0]\n'}
+[3.205829] (EKFLocalization) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.205912] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:263:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kodometry_msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.206005] (EKFLocalization) StderrLine: {'line': b'  263 |       \x1b[01;31m\x1b[Kodometry_msg\x1b[m\x1b[K.pose.covariance[1]  = Sigma[0, 1]\n'}
+[3.206093] (EKFLocalization) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.206261] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFLocalization::Set_Previous()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.206337] (-) TimerEvent: {}
+[3.206428] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:280:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kprev_Sigma\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.206500] (EKFLocalization) StderrLine: {'line': b'  280 |       \x1b[01;31m\x1b[Kprev_Sigma\x1b[m\x1b[K = Sigma\n'}
+[3.206551] (EKFLocalization) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.206812] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.206965] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:331:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfirst\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::first\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.207024] (EKFLocalization) StderrLine: {'line': b'  331 |       if (\x1b[01;31m\x1b[Kfirst\x1b[m\x1b[K){\n'}
+[3.207076] (EKFLocalization) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.207125] (EKFLocalization) StderrLine: {'line': b'      |           \x1b[32m\x1b[KEigen::internal::first\x1b[m\x1b[K\n'}
+[3.207196] (EKFLocalization) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:265\x1b[m\x1b[K,\n'}
+[3.207246] (EKFLocalization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[3.207319] (EKFLocalization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:12\x1b[m\x1b[K:\n'}
+[3.207369] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:81:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::first\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.207424] (EKFLocalization) StderrLine: {'line': b'   81 | EIGEN_CONSTEXPR Index \x1b[01;36m\x1b[Kfirst\x1b[m\x1b[K(const T& x) EIGEN_NOEXCEPT { return x.first(); }\n'}
+[3.207473] (EKFLocalization) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.210928] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:333:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstart_time\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstrptime\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.211077] (EKFLocalization) StderrLine: {'line': b'  333 |         \x1b[01;31m\x1b[Kstart_time\x1b[m\x1b[K = this->get_clock()->now();\n'}
+[3.211182] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.211314] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kstrptime\x1b[m\x1b[K\n'}
+[3.211372] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:333:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.211439] (EKFLocalization) StderrLine: {'line': b'  333 |         start_time = \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_clock()->now();\n'}
+[3.211498] (EKFLocalization) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.215579] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:334:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_time\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.215672] (EKFLocalization) StderrLine: {'line': b'  334 |         \x1b[01;31m\x1b[Kcurrent_time\x1b[m\x1b[K = this->get_clock()->now();\n'}
+[3.215729] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.215780] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:334:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.215832] (EKFLocalization) StderrLine: {'line': b'  334 |         current_time = \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_clock()->now();\n'}
+[3.215881] (EKFLocalization) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.219111] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:335:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_time\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kasctime\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.219306] (EKFLocalization) StderrLine: {'line': b'  335 |         \x1b[01;31m\x1b[Klast_time\x1b[m\x1b[K = this->get_clock()->now();\n'}
+[3.219373] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.219426] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kasctime\x1b[m\x1b[K\n'}
+[3.219489] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:335:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.219541] (EKFLocalization) StderrLine: {'line': b'  335 |         last_time = \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_clock()->now();\n'}
+[3.219590] (EKFLocalization) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.223721] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:338:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_time\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.223813] (EKFLocalization) StderrLine: {'line': b'  338 |         \x1b[01;31m\x1b[Kcurrent_time\x1b[m\x1b[K = this->get_clock()->now();\n'}
+[3.223870] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.223922] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:338:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.223973] (EKFLocalization) StderrLine: {'line': b'  338 |         current_time = \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_clock()->now();\n'}
+[3.224022] (EKFLocalization) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.226130] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:339:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdt_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.226223] (EKFLocalization) StderrLine: {'line': b'  339 |         \x1b[01;31m\x1b[Kdt_\x1b[m\x1b[K = current_time.seconds() - last_time.seconds();\n'}
+[3.226342] (EKFLocalization) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.229549] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:339:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_time\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kasctime\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.229676] (EKFLocalization) StderrLine: {'line': b'  339 |         dt_ = current_time.seconds() - \x1b[01;31m\x1b[Klast_time\x1b[m\x1b[K.seconds();\n'}
+[3.229754] (EKFLocalization) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.229805] (EKFLocalization) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[Kasctime\x1b[m\x1b[K\n'}
+[3.234212] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:340:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksample_time\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.234454] (EKFLocalization) StderrLine: {'line': b'  340 |         if (dt_ >= \x1b[01;31m\x1b[Ksample_time\x1b[m\x1b[K){\n'}
+[3.234557] (EKFLocalization) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.240639] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:341:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoseEstimation\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.240877] (EKFLocalization) StderrLine: {'line': b'  341 |           \x1b[01;31m\x1b[KPoseEstimation\x1b[m\x1b[K(dt_,true);\n'}
+[3.240958] (EKFLocalization) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.241011] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K At global scope:\n'}
+[3.241075] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:347:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kpublic\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.241127] (EKFLocalization) StderrLine: {'line': b'  347 |   \x1b[01;31m\x1b[Kpublic\x1b[m\x1b[K:\n'}
+[3.241197] (EKFLocalization) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.241247] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:371:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.241313] (EKFLocalization) StderrLine: {'line': b'  371 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[3.241363] (EKFLocalization) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.248655] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.248802] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:376:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPuzzlebot_Odometry\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.248866] (EKFLocalization) StderrLine: {'line': b'  376 |   rclcpp::spin(std::make_shared<\x1b[01;31m\x1b[KPuzzlebot_Odometry\x1b[m\x1b[K>());\n'}
+[3.248923] (EKFLocalization) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.248977] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:376:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.249131] (EKFLocalization) StderrLine: {'line': b'  376 |   rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<Puzzlebot_Odometry>()\x1b[m\x1b[K);\n'}
+[3.249209] (EKFLocalization) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[3.249278] (EKFLocalization) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[3.249396] (EKFLocalization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:10\x1b[m\x1b[K:\n'}
+[3.249492] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.249616] (EKFLocalization) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[3.249672] (EKFLocalization) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.249730] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.249780] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:376:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.249830] (EKFLocalization) StderrLine: {'line': b'  376 |   rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<Puzzlebot_Odometry>()\x1b[m\x1b[K);\n'}
+[3.249879] (EKFLocalization) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[3.306432] (-) TimerEvent: {}
+[3.342022] (EKFLocalization) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:164\x1b[m\x1b[K,\n'}
+[3.342179] (EKFLocalization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[3.342240] (EKFLocalization) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:12\x1b[m\x1b[K:\n'}
+[3.342310] (EKFLocalization) StderrLine: {'line': b'/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::operator[](Eigen::Index) [with Derived = Eigen::Matrix<float, 3, 3>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = float; Eigen::Index = long int]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.342368] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/home/javier/puzzlebot_ws/src/EKFLocalization/src/EKFLozalization.cpp:262:52:\x1b[m\x1b[K   required from here\n'}
+[3.342421] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:408:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: THE_BRACKET_OPERATOR_IS_ONLY_FOR_VECTORS__USE_THE_PARENTHESIS_OPERATOR_INSTEAD\n'}
+[3.342474] (EKFLocalization) StderrLine: {'line': b'  408 |       \x1b[01;31m\x1b[KEIGEN_STATIC_ASSERT\x1b[m\x1b[K(Derived::IsVectorAtCompileTime,\n'}
+[3.342524] (EKFLocalization) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.342575] (EKFLocalization) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:408:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<float, 3, 3>::IsVectorAtCompileTime\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[3.406522] (-) TimerEvent: {}
+[3.506745] (-) TimerEvent: {}
+[3.606963] (-) TimerEvent: {}
+[3.707233] (-) TimerEvent: {}
+[3.807461] (-) TimerEvent: {}
+[3.907679] (-) TimerEvent: {}
+[4.007906] (-) TimerEvent: {}
+[4.108141] (-) TimerEvent: {}
+[4.208421] (-) TimerEvent: {}
+[4.308699] (-) TimerEvent: {}
+[4.408961] (-) TimerEvent: {}
+[4.509241] (-) TimerEvent: {}
+[4.564066] (EKFLocalization) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/EKFLozalization.dir/build.make:76: CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o] Error 1\n'}
+[4.564263] (EKFLocalization) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/EKFLozalization.dir/all] Error 2\n'}
+[4.564488] (EKFLocalization) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.566398] (EKFLocalization) CommandEnded: {'returncode': 2}
+[4.594585] (EKFLocalization) JobEnded: {'identifier': 'EKFLocalization', 'rc': 2}
+[4.595561] (-) EventReactorShutdown: {}

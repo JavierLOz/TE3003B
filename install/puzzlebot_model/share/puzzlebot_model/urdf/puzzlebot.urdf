@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<robot name="puzlebot">
+
+    <!-- <link name="base_footprint"/> -->
+
+    <link name="chasis">
+        <visual>
+            <geometry>
+               <mesh
+                filename="package://puzzlebot_model/meshes/MCR2_1000_13_Chassis.stl"
+                meshscale="1 1 1" 
+                />
+            </geometry>
+            <origin xyz="-0.05 0 0" rpy="1.57 0 1.57" />
+        </visual>
+    </link>
+
+    <link name="lidar_geom">
+        <visual>
+            <geometry>
+                <cylinder radius="0.025" length="0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </visual>
+    </link>
+
+    <link name="right_wheel">
+        <visual>
+            <geometry>
+               <mesh
+                filename="package://puzzlebot_model/meshes/MCR2_1000_1_1_Wheel_Coupler_2.stl"
+                meshscale="1 1 1" 
+                />
+            </geometry>
+            <origin xyz="0 0 0" rpy="-3.14 0 0" />
+        </visual>
+    </link>
+
+    <link name="left_wheel">
+        <visual>
+            <geometry>
+               <mesh
+                filename="package://puzzlebot_model/meshes/MCR2_1000_1_1_Wheel_Coupler_2.stl"
+                meshscale="1 1 1" 
+                />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </visual>
+    </link>
+
+    <!-- <joint name="base_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="chasis"/>
+        <origin xyz="0 0 0.05 " rpy="0 0 0"/>
+    </joint> -->
+
+    <joint name="base_to_lidar" type="fixed">
+        <parent link="chasis"/>
+        <child link="lidar_geom"/>
+        <origin xyz="0 0 0.08 " rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_to_left_wheel" type="continuous">
+        <parent link="chasis"/>
+        <child link="left_wheel"/>  
+        <origin xyz="0 0.095 0" rpy="1.57 0  0"/>
+        <axis xyz="0.0 0.0 1."/>
+    </joint>
+
+    <joint name="base_to_right_wheel" type="continuous">
+        <parent link="chasis"/>
+        <child link="right_wheel"/>
+        <origin xyz="0 -0.095 0" rpy="1.57 0 0"/>
+        <axis xyz="0.0 0.0 1."/>
+    </joint>
+
+</robot>

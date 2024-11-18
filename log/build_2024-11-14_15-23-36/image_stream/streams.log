@@ -1,0 +1,58 @@
+[0.029s] Invoking command in '/home/javier/puzzlebot_ws/src/build/image_stream': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/javier/puzzlebot_ws/src/image_stream -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/image_stream
+[0.852s] -- The C compiler identification is GNU 12.3.0
+[0.852s] -- The CXX compiler identification is GNU 11.4.0
+[0.853s] -- Detecting C compiler ABI info
+[0.853s] -- Detecting C compiler ABI info - done
+[0.854s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.854s] -- Detecting C compile features
+[0.854s] -- Detecting C compile features - done
+[0.855s] -- Detecting CXX compiler ABI info
+[0.855s] -- Detecting CXX compiler ABI info - done
+[0.855s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.855s] -- Detecting CXX compile features
+[0.855s] -- Detecting CXX compile features - done
+[0.856s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.857s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.940s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.011s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.019s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.033s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.055s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.084s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.164s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.168s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.304s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.352s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.418s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.430s] -- Looking for pthread.h
+[1.546s] -- Looking for pthread.h - found
+[1.547s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.647s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.649s] -- Found Threads: TRUE  
+[1.711s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.773s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.794s] -- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)
+[1.860s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[1.864s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.037s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.037s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/javier/puzzlebot_ws/src/image_stream/include>
+[2.037s] -- Configured cppcheck exclude dirs and/or files: 
+[2.038s] -- Added test 'lint_cmake' to check CMake code style
+[2.040s] -- Added test 'uncrustify' to check C / C++ code style
+[2.040s] -- Configured uncrustify additional arguments: 
+[2.040s] -- Added test 'xmllint' to check XML markup files
+[2.042s] -- Configuring done
+[2.068s] -- Generating done
+[2.071s] -- Build files have been written to: /home/javier/puzzlebot_ws/src/build/image_stream
+[2.090s] Invoked command in '/home/javier/puzzlebot_ws/src/build/image_stream' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/javier/puzzlebot_ws/src/image_stream -DCMAKE_INSTALL_PREFIX=/home/javier/puzzlebot_ws/src/install/image_stream
+[2.092s] Invoking command in '/home/javier/puzzlebot_ws/src/build/image_stream': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/javier/puzzlebot_ws/src/build/image_stream -- -j12 -l12
+[2.150s] [ 50%] [32mBuilding CXX object CMakeFiles/image_stream.dir/src/image_stream.cpp.o[0m
+[6.531s] In file included from [01m[K/home/javier/puzzlebot_ws/src/image_stream/src/image_stream.cpp:7[m[K:
+[6.531s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.h:32:89:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Warning: This header is deprecated. Use 'image_transport.hpp' instead[m[K’
+[6.531s]    32 | Warning: This header is deprecated. Use 'image_transport.hpp' instead"[01;36m[K)[m[K
+[6.531s]       |                                                                       [01;36m[K^[m[K
+[6.531s] 
+[10.167s] [100%] [32m[1mLinking CXX executable image_stream[0m
+[10.292s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.410
+[10.293s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[14.025s] [100%] Built target image_stream

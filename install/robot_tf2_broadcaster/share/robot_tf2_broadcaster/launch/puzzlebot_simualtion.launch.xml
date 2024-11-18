@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  
+    <arg name="node_rate" default="1000"/>
+    <arg name="sample_time" default="0.1"/>
+    <arg name="L" default="0.19"/>
+    <arg name="R" default="0.05"/>
+    <arg name="cmd_vel_topic" default="/cmd_vel_debug"/>
+    <arg name="chasis_pose_pub_topic" default="/chasis_pose"/>
+    <arg name="wr_pose_pub_topic" default="/wr_pose"/>
+    <arg name="wl_pose_pub_topic" default="/wl_pose"/>
+    <!-- <arg name="robot_description" default="puzzlebot.urdf"/> -->
+
+    <arg name="world_reference_frame" default="odom"/>
+    <arg name="robot_chasis_frame" default="chasis"/> 
+    <!-- TESTTT -->
+    <arg name="base_joint_name" default="base_joint"/>
+    <arg name="base_to_left_wheel_name" default="base_to_left_wheel"/>
+    <arg name="base_to_right_wheel_name" default="base_to_right_wheel"/>
+    <arg name="joint_states_pub_topic" default="joint_states"/>
+
+    <include file="$(find-pkg-share puzzlebot_model)/launch/puzzlebot_model.launch.py"/>
+
+    <node pkg="robot_pose_estimator" exec="robot_pose_estimator" >
+        <param name="node_rate" value="$(var node_rate)"/>
+        <param name="sample_time" value="$(var sample_time)"/>
+        <param name="cmd_vel_topic" value="$(var cmd_vel_topic)"/>
+        <param name="chasis_pose_pub_topic" value="$(var chasis_pose_pub_topic)"/>
+        <param name="wr_pose_pub_topic" value="$(var wr_pose_pub_topic)"/>
+        <param name="wl_pose_pub_topic" value="$(var wl_pose_pub_topic)"/>
+        <param name="L" value="$(var L)"/>
+        <param name="R" value="$(var R)"/>
+    </node>
+
+    <node pkg="robot_tf2_broadcaster" exec="robot_tf2_broadcaster">
+        <param name="chasis_pose_pub_topic" value="$(var chasis_pose_pub_topic)"/>
+        <param name="joint_states_pub_topic" value="$(var joint_states_pub_topic)"/>
+        <param name="wr_pose_pub_topic" value="$(var wr_pose_pub_topic)"/>
+        <param name="wl_pose_pub_topic" value="$(var wl_pose_pub_topic)"/>
+        <param name="world_reference_frame" value="$(var world_reference_frame)"/>
+        <param name="robot_chasis_frame" value="$(var robot_chasis_frame)"/>
+        <param name="base_joint_name" value="$(var base_joint_name)"/>
+        <param name="base_to_left_wheel_name" value="$(var base_to_left_wheel_name)"/>
+        <param name="base_to_right_wheel_name" value="$(var base_to_right_wheel_name)"/>
+    </node>
+
+</launch>

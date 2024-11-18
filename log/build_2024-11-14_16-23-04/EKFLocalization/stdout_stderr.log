@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target EKFLozalization[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/EKFLozalization.dir/src/EKFLozalization.cpp.o[0m
+[100%] [32m[1mLinking CXX executable EKFLozalization[0m
+[100%] Built target EKFLozalization
+-- Install configuration: ""
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/lib/EKFLocalization/EKFLozalization
+-- Set runtime path of "/home/javier/puzzlebot_ws/src/install/EKFLocalization/lib/EKFLocalization/EKFLozalization" to ""
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/package_run_dependencies/EKFLocalization
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/parent_prefix_path/EKFLocalization
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/ament_prefix_path.sh
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/ament_prefix_path.dsv
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/path.sh
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/environment/path.dsv
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.bash
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.sh
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.zsh
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/local_setup.dsv
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.dsv
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/ament_index/resource_index/packages/EKFLocalization
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/cmake/EKFLocalizationConfig.cmake
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/cmake/EKFLocalizationConfig-version.cmake
+-- Installing: /home/javier/puzzlebot_ws/src/install/EKFLocalization/share/EKFLocalization/package.xml

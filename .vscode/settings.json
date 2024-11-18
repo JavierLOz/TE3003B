@@ -68,6 +68,8 @@
         "cinttypes": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "core": "cpp"
-    }
+        "core": "cpp",
+        "dense": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/javier/puzzlebot_ws/src/EKFLocalization"
 }
