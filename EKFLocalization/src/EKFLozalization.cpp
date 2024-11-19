@@ -17,6 +17,10 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float32.hpp"
 #include "nav_msgs/msg/odometry.hpp"
+#include "tf2_ros/buffer.h"
+#include "tf2_ros/transform_listener.h"
+#include "tf2/exceptions.h"
+
 
 using namespace std::chrono_literals;
 
@@ -60,6 +64,10 @@ class EKFLocalization : public rclcpp::Node
     float z_alpha = 0.0;
     float z_rho   = 0.0;    
 
+    // Assign frames for tf listener 
+    std::string fromFrameRel = "lidar_raw";
+    std::string toFrameRel = "world";
+
     // Set initial sensor readings
     Eigen::Vector2f z_measured = Eigen::Vector2f::Zero(); 
     Eigen::Vector2f z_static = Eigen::Vector2f::Zero(); 
@@ -89,6 +97,13 @@ class EKFLocalization : public rclcpp::Node
 
     // Initialize transformed message 
     geometry_msgs::msg::TransformStamped odom_trans;
+
+    // Initialize cartographer measurement message
+    geometry_msgs::msg::TransformStamped cartographer_tf;
+    // Initialize transformed listener 
+    std::shared_ptr<tf2_ros::TransformListener> tf_listener_{nullptr};
+    // Initialize buffer to store data from transformed listener
+    std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
 
     // Initialize subscribers and publishers 
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr subsVelR_;
@@ -125,6 +140,34 @@ class EKFLocalization : public rclcpp::Node
       v_k = msg->linear.x;
       w_k = msg->angular.z;
 
+    }
+
+    bool get_cartographer_tf(){
+      try {
+        cartographer_tf = tf_buffer_->lookupTransform(
+        toFrameRel, fromFrameRel,
+        tf2::TimePointZero);
+        return true;
+
+        float lidar_p = pow(cartographer_tf.transform.translation.x,2) + pow(cartographer_tf.transform.translation.y,2);
+        z_measured(0) = sqrt(lidar_p);
+        // TODO : sacar el angulo desde el quaternion
+        z_measured(1) = atan2(cartographer_tf.transform.translation.y,cartographer_tf.transform.translation.x);
+
+        std::cout << "t: " << cartographer_tf.header.stamp.sec << std::endl;
+        std::cout << "x: " << cartographer_tf.transform.translation.x << std::endl;
+        std::cout << "y: " << cartographer_tf.transform.translation.y << std::endl;
+        std::cout << "z: " << cartographer_tf.transform.translation.z << std::endl;
+        std::cout << "a: " << cartographer_tf.transform.rotation.x << std::endl;
+        std::cout << "b: " << cartographer_tf.transform.rotation.y << std::endl;
+        std::cout << "g: " << cartographer_tf.transform.rotation.z << std::endl;
+        std::cout << "w: " << cartographer_tf.transform.rotation.w << std::endl;
+      } catch (const tf2::TransformException & ex) {
+          RCLCPP_INFO(
+          this->get_logger(), "Could not transform %s to %s: %s",
+          toFrameRel.c_str(), fromFrameRel.c_str(), ex.what());
+          return false;
+      }
     }
     //**---------------------------------------------------------- */
 
@@ -325,7 +368,7 @@ class EKFLocalization : public rclcpp::Node
       z_measured(0) = 0.0; //landmark_measured(0);
       z_measured(1) = 0.0; //landmark_measured(1);
 
-      // TODO  Definir al iniciar 
+      // TODO  Definir al iniciar verificar los signos con la medicion tf 
       z_static(0) = 0.0;// landmark_pos(0);
       z_static(1) = 0.0; //landmark_pos(1);
 
@@ -347,9 +390,9 @@ class EKFLocalization : public rclcpp::Node
       dt = dt_;
 
       estimate_Q();
-      Q(0, 0) = 0.001; Q(0, 1) = 0.001; Q(0, 2) = 0.001;
-      Q(1, 0) = 0.001; Q(1, 1) = 0.001;  Q(1, 2) = 0.001;
-      Q(2, 0) = 0.001; Q(2, 1) = 0.001; Q(2, 2) = 0.001;
+      // Q(0, 0) = 0.001; Q(0, 1) = 0.001; Q(0, 2) = 0.001;
+      // Q(1, 0) = 0.001; Q(1, 1) = 0.001;  Q(1, 2) = 0.001;
+      // Q(2, 0) = 0.001; Q(2, 1) = 0.001; Q(2, 2) = 0.001;
 
       calc_miuHat(); // Ideal calculated pose
       calc_gradient_h(); // Pose Model linerization
@@ -381,7 +424,9 @@ class EKFLocalization : public rclcpp::Node
         float dt_ = current_time.seconds() - last_time.seconds();
         if (dt_ >= sample_time){
           std::cout << "dt: " << dt_ << std::endl;
-          PoseEstimation(dt_,false);
+          bool got_measurement = get_cartographer_tf();
+          std::cout << "got_meas: " << got_measurement << std::endl;
+          PoseEstimation(dt_,got_measurement);
           publish_result();
           // last_time = this->get_clock()->now();
         }
@@ -408,6 +453,9 @@ class EKFLocalization : public rclcpp::Node
       pubOdom_ = this->create_publisher<nav_msgs::msg::Odometry>("/pzbt_odom",10);
 
       tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
+
+      tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock()); 
+      tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);  
 
       timer_ = this->create_wall_timer(
       100ms, std::bind(&EKFLocalization::timer_callback, this));

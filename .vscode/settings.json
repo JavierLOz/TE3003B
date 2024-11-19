@@ -69,7 +69,12 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "core": "cpp",
-        "dense": "cpp"
+        "dense": "cpp",
+        "csignal": "cpp",
+        "strstream": "cpp",
+        "codecvt": "cpp",
+        "future": "cpp",
+        "variant": "cpp"
     },
     "cmake.sourceDirectory": "/home/javier/puzzlebot_ws/src/EKFLocalization"
 }

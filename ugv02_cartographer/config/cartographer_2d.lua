@@ -5,9 +5,9 @@ options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
   map_frame = "world",
-  tracking_frame = "lidar",
-  published_frame = "chasis",
-  odom_frame = "odom_cart",
+  tracking_frame = "lidar_raw",
+  published_frame = "lidar_raw",
+  odom_frame = "odom_lidar",
   provide_odom_frame = true,
   publish_frame_projected_to_2d = true,
   use_pose_extrapolator = true,
@@ -31,7 +31,6 @@ options = {
 
 TRAJECTORY_BUILDER_2D.use_imu_data = false
 MAP_BUILDER.use_trajectory_builder_2d = true
-
 
 TRAJECTORY_BUILDER_2D.min_range = 0.05
 TRAJECTORY_BUILDER_2D.max_range = 4.0  -- Set this to less than 4.0, as an example
