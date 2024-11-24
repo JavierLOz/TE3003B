@@ -40,6 +40,10 @@
   ```console
   $ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0
   ```
+- Run google cartographer:
+  ```console
+  $ros2 laucnh ugv0_cartographer cartographer.launch.py
+  ```
 - Run EKF node:
   ```console
   $ ros2 run EKFLocalization EKFLocalization
