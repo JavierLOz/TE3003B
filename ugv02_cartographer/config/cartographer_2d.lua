@@ -4,10 +4,10 @@ include "trajectory_builder.lua"
 options = {
   map_builder = MAP_BUILDER,
   trajectory_builder = TRAJECTORY_BUILDER,
-  map_frame = "world",
-  tracking_frame = "lidar_raw",
-  published_frame = "lidar_raw",
-  odom_frame = "odom_lidar",
+  map_frame = "map",
+  tracking_frame = "lidar_raw", -- Odom 
+  published_frame = "lidar_raw",-- robot
+  odom_frame = "odom_cart",
   provide_odom_frame = true,
   publish_frame_projected_to_2d = true,
   use_pose_extrapolator = true,

@@ -1,6 +1,6 @@
 // TODO include packages in the cmake and package
 // TODO declare object variables as paramters
-
+//https://stackoverflow.com/questions/1755631/difference-between-two-quaternions
 // https://wiki.ros.org/navigation/Tutorials/RobotSetup/Odom 
 // https://docs.ros.org/en/foxy/Tutorials/Intermediate/Tf2/Writing-A-Tf2-Broadcaster-Cpp.html
 #include <cmath>
@@ -20,11 +20,12 @@
 #include "tf2_ros/buffer.h"
 #include "tf2_ros/transform_listener.h"
 #include "tf2/exceptions.h"
+#include <tf2/LinearMath/Matrix3x3.h>
 
 
 using namespace std::chrono_literals;
 
-constexpr double pi = 3.14159265358979323846;
+// constexpr double M_PI = 3.14159265358979323846;
 
 /* This example creates a subclass of Node and uses std::bind() to register a
 * member function as a callback from the timer. */
@@ -41,7 +42,7 @@ class EKFLocalization : public rclcpp::Node
     rclcpp::Time current_time;
 
     // initialize robot properties 
-    float wheel_rad  = 0.05;
+    float wheel_rad  = 0.0505;
     float wheel_dist = 0.19;
 
     bool first = 1;
@@ -77,7 +78,7 @@ class EKFLocalization : public rclcpp::Node
     Eigen::Vector3f prev_s = Eigen::Vector3f::Zero();
 
     // Initializa filter parameters
-    Eigen::Matrix3f H          = Eigen::Matrix3f::Identity(); //Robot Pose Model Jacobian Matrix
+    Eigen::Matrix3f H          = Eigen::Matrix3f::Identity();//Robot Pose Model Jacobian Matrix
     Eigen::Matrix3f Sigma      = Eigen::Matrix3f::Zero(); //Current Robot Pose Model Covariance Matrix
     Eigen::Matrix3f prev_Sigma = Eigen::Matrix3f::Zero(); //Previous Robot Pose Model Covariance Matrix
     Eigen::Matrix3f Q          = Eigen::Matrix3f::Zero(); //Current Robot Pose Noise Covariance Matrix
@@ -122,7 +123,7 @@ class EKFLocalization : public rclcpp::Node
     // Store encoder vel (R)
     void encR_callback(const std_msgs::msg::Float32::SharedPtr msg) {  
       
-      this->wR = msg->data;
+      wR = msg->data;
       // RCLCPP_INFO(this->get_logger(), "wR: '%f'", this->wR);  
 
     }
@@ -130,42 +131,55 @@ class EKFLocalization : public rclcpp::Node
     // Store encoder vel (L)
     void encL_callback(const std_msgs::msg::Float32::SharedPtr msg) {  
       
-      this->wL = msg->data;
+      wL = msg->data;
 
     }
 
     // Store last controll signal 
     void control_callback(const geometry_msgs::msg::Twist::SharedPtr msg) {  
 
-      v_k = msg->linear.x;
-      w_k = msg->angular.z;
+       v_k = msg->linear.x;
+       w_k = msg->angular.z;
+
 
     }
 
     bool get_cartographer_tf(){
       try {
+        
         cartographer_tf = tf_buffer_->lookupTransform(
         toFrameRel, fromFrameRel,
         tf2::TimePointZero);
-        return true;
+
+        tf2::Quaternion q(cartographer_tf.transform.rotation.x, 
+                          cartographer_tf.transform.rotation.y, 
+                          cartographer_tf.transform.rotation.z, 
+                          cartographer_tf.transform.rotation.w);
+
+        tf2::Matrix3x3 m(q);
+
+        tf2::Quaternion q_rot;
+        tf2::Quaternion q_new;
+        q_rot.setRPY(0, 0, -M_PI);
+        q_new = q_rot * q;
+        m.setRotation(q_new);
+        double roll, pitch, yaw;
+        m.getRPY(roll, pitch, yaw);
+
+        //std::cout << "YAW: " << yaw << std::endl;
 
         float lidar_p = pow(cartographer_tf.transform.translation.x,2) + pow(cartographer_tf.transform.translation.y,2);
+        
         z_measured(0) = sqrt(lidar_p);
         // TODO : sacar el angulo desde el quaternion
-        z_measured(1) = atan2(cartographer_tf.transform.translation.y,cartographer_tf.transform.translation.x);
+        z_measured(1) = yaw;//wrap_to_pi(yaw);//wrap_to_pi(arctan2(cartographer_tf.transform.translation.y,cartographer_tf.transform.translation.x));
+        
+        return true;
 
-        std::cout << "t: " << cartographer_tf.header.stamp.sec << std::endl;
-        std::cout << "x: " << cartographer_tf.transform.translation.x << std::endl;
-        std::cout << "y: " << cartographer_tf.transform.translation.y << std::endl;
-        std::cout << "z: " << cartographer_tf.transform.translation.z << std::endl;
-        std::cout << "a: " << cartographer_tf.transform.rotation.x << std::endl;
-        std::cout << "b: " << cartographer_tf.transform.rotation.y << std::endl;
-        std::cout << "g: " << cartographer_tf.transform.rotation.z << std::endl;
-        std::cout << "w: " << cartographer_tf.transform.rotation.w << std::endl;
       } catch (const tf2::TransformException & ex) {
-          RCLCPP_INFO(
-          this->get_logger(), "Could not transform %s to %s: %s",
-          toFrameRel.c_str(), fromFrameRel.c_str(), ex.what());
+          //RCLCPP_INFO(
+          //this->get_logger(), "Could not transform %s to %s: %s",
+          //toFrameRel.c_str(), fromFrameRel.c_str(), ex.what());
           return false;
       }
     }
@@ -173,12 +187,20 @@ class EKFLocalization : public rclcpp::Node
 
 
     //**----------------------math functions---------------------- */
-    float wrap_to_pi(float& theta){
-      if (theta > pi){
-        theta = theta - 2 * pi;
+    float arctan2(float y, float x){
+      float angle = atan2(y,x);
+      if (x < 0){
+        angle += (y >= 0) ? M_PI : M_PI;
       }
-      else if (theta < -pi){
-        theta = theta + 2 * pi;
+      return angle;
+    }
+    
+    float wrap_to_pi(float theta){
+      if (theta > M_PI){
+        theta = theta - 2 * M_PI;
+      }
+      else if (theta < -M_PI){
+        theta = theta + 2 * M_PI;
       }
       return theta;
     }
@@ -217,8 +239,8 @@ class EKFLocalization : public rclcpp::Node
     void calc_miuHat(){
       s(0) = prev_s(0) + dt * v_k * cos(prev_s(2));
       s(1) = prev_s(1) + dt * v_k * sin(prev_s(2));
-      s(2) = prev_s(2) + dt * w_k;
-      std::cout << "v_k: " << v_k << std::endl;
+      s(2) = wrap_to_pi(prev_s(2) + dt * w_k);
+      std::cout << "v_k_: " << v_k << std::endl;
       std::cout << "w_k: " << w_k << std::endl;
       std::cout << "s(0): " << s(0) << std::endl;
       std::cout << "s(1): " << s(1) << std::endl;
@@ -233,7 +255,7 @@ class EKFLocalization : public rclcpp::Node
 
     void calc_SigmaHat(){
       Sigma = H * prev_Sigma * H.transpose() + Q;
-      std::cout << "sigma_hat: " << Sigma << std::endl;
+      // std::cout << "sigma_hat: " << Sigma << std::endl;
 
     }
 
@@ -246,12 +268,12 @@ class EKFLocalization : public rclcpp::Node
       p = pow(delta_zx,2) + pow(delta_zy,2); 
       // std::cout<< "p: " << p << std::endl;
 
-      float theta_ = atan2(delta_zy,delta_zx) - s(2);
-      std::cout<< "theta_: " << theta_ << std::endl;
+      // float theta_ = arctan2(delta_zy,delta_zx) ;
+      // std::cout<< "theta_: " << theta_ << std::endl;
       z(0) = sqrt(p);
       // std::cout<< "sqrt(p: " << z(0) << std::endl;
-
-      z(1) = wrap_to_pi(theta_);
+      // TODO : sacar del quaternion 
+      z(1) = s(2); //wrap_to_pi(theta_);
     }
 
     void calc_gradient_g(){
@@ -279,18 +301,39 @@ class EKFLocalization : public rclcpp::Node
     }
 
     void calc_kalman_gain(){
-       std::cout << "k antes: " << K << std::endl;
-       std::cout << "G antes: " << G << std::endl;
-       std::cout << "sigam antes: " << Sigma << std::endl;
+      //  std::cout << "k antes: " << K << std::endl;
+      //  std::cout << "G antes: " << G << std::endl;
+      //  std::cout << "sigam antes: " << Sigma << std::endl;
       K = Sigma * G.transpose() * Z.inverse();
     }
 
     void calc_miu(){
       // std::cout << "s antes: " << s << std::endl;
       // std::cout << "k antes: " << K << std::endl;
-      // std::cout << "Zmes antes: " << z_measured << std::endl;
+      std::cout << "Zmes: " << z_measured(0) << std::endl;
+      std::cout << "Z   : " << z(0) << std::endl;
+      std::cout << "tmes: " << z_measured(1) << std::endl;
+      std::cout << "t   : " << z(1) << std::endl;
+
       // std::cout << "Z antes: " << z << std::endl;
-      s = s + K * (z_measured - z);
+      Eigen::Vector2f z_diff = Eigen::Vector2f::Zero();
+      z_diff(0) = z_measured(0) - z(0);
+      // hacer resta en quat QTransition = QFinal * QInitial^{-1}
+      // hacer la resta en quaterniones y luego sacar el angulo RPY
+      tf2::Quaternion q_rot;
+      tf2::Quaternion q_1;
+      tf2::Quaternion q_2;
+
+      q_1.setRPY(0.0,0.0,z(1));
+      q_2.setRPY(0.0,0.0,z_measured(1));
+
+      q_rot = q_2 * q_1.inverse();
+      tf2::Matrix3x3 m(q_rot);
+      double roll, pitch, yaw;
+      m.getRPY(roll, pitch, yaw);
+      z_diff(1) = yaw;
+      // z_diff(1) = z_measured(0) - z(0);
+      s = s + K * z_diff;
 
     }
 
@@ -359,14 +402,16 @@ class EKFLocalization : public rclcpp::Node
       prev_s(1) = s(1);
       prev_s(2) = s(2);
       prev_Sigma = Sigma;
-      last_time = current_time;
+      last_time = this->get_clock()->now();
     }
 
     void PoseEstimation(float dt_, bool landmark_status){
         
       // TODO  -> Obtener del subscriptor del pose. 
-      z_measured(0) = 0.0; //landmark_measured(0);
-      z_measured(1) = 0.0; //landmark_measured(1);
+      // z_measured(0) = 0.0; //landmark_measured(0);
+      // z_measured(1) = 0.0; //landmark_measured(1);
+	
+	    dt = dt_;
 
       // TODO  Definir al iniciar verificar los signos con la medicion tf 
       z_static(0) = 0.0;// landmark_pos(0);
@@ -375,20 +420,21 @@ class EKFLocalization : public rclcpp::Node
       // TODO -> revisar estas de dnde vienne -> del subscriptor??
       // v_k = control_u[0];
       // w_k = control_u[1];
+      //v_k = compute_linear_vel();
+      //w_k = compute_angular_vel();
 
       // TODO > obtener del subscriptor
       // wl = measured_wl;
       // wr = measured_wr;
 
-      kL = 0.0; //calibrated_klr(0);
-      kR = 0.0; //calibrated_klr(1);
+      kL = 0.0577; //calibrated_klr(0);
+      kR = 0.0529; //calibrated_klr(1);
 
-      R(0,0) = 0.1;  
-      R(1,1) = 0.2;  
+      R(0,0) = 7.32e-12;  
+      R(1,1) = 0.001;  
 
       //calibrated_R;
-      dt = dt_;
-
+      
       estimate_Q();
       // Q(0, 0) = 0.001; Q(0, 1) = 0.001; Q(0, 2) = 0.001;
       // Q(1, 0) = 0.001; Q(1, 1) = 0.001;  Q(1, 2) = 0.001;
@@ -417,7 +463,7 @@ class EKFLocalization : public rclcpp::Node
         // TODO : Fix Nabla initialization. Error when assigning manually as param
         Nabla(2,0) =  2.0/0.19;
         Nabla(2,1) =  2.0/0.19;
-        std::cout << "Nabla: " << Nabla <<std::endl;
+        //std::cout << "Nabla: " << Nabla <<std::endl;
       }
       else {
         current_time = this->get_clock()->now();
@@ -438,7 +484,7 @@ class EKFLocalization : public rclcpp::Node
     : Node("EKFLozalization")
     {
       
-      rclcpp::QoS qos_settings(rclcpp::KeepLast(10));
+      rclcpp::QoS qos_settings(rclcpp::KeepLast(1));
       qos_settings.reliability(RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT);
 
       subsVelR_ = this->create_subscription<std_msgs::msg::Float32>(
@@ -450,7 +496,7 @@ class EKFLocalization : public rclcpp::Node
       subsCont_ = this->create_subscription<geometry_msgs::msg::Twist>(
       "/cmd_vel", qos_settings, std::bind(&EKFLocalization::control_callback, this, std::placeholders::_1));
 
-      pubOdom_ = this->create_publisher<nav_msgs::msg::Odometry>("/pzbt_odom",10);
+      pubOdom_ = this->create_publisher<nav_msgs::msg::Odometry>("/odom",10);
 
       tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
 
@@ -458,7 +504,7 @@ class EKFLocalization : public rclcpp::Node
       tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);  
 
       timer_ = this->create_wall_timer(
-      100ms, std::bind(&EKFLocalization::timer_callback, this));
+      10ms, std::bind(&EKFLocalization::timer_callback, this));
     }
 };
 
