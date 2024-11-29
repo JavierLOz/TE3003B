@@ -29,5 +29,23 @@
     z: 0.0" 
 
   ```
-
-  All this is visualized on ```rviz2```. 
+  All this is visualized on ```rviz2```.
+  
+## Final Challenge - Kalman Filter, Dead Reckoning
+- Run Lidar sensor and initiate connection
+  ```console
+  $ ros2 launch sllidar_ros sllidar_a1_launch.py
+  ```
+- Run Serial agent for motor control and odometry publishing:
+  ```console
+  $ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0
+  ```
+- Run google cartographer:
+  ```console
+  $ros2 laucnh ugv0_cartographer cartographer.launch.py
+  ```
+- Run EKF node:
+  ```console
+  $ ros2 run EKFLocalization EKFLocalization
+  ```
+  
